@@ -76,7 +76,7 @@ export default function ProgressSlider() {
   }, [])
 
   return (
-    <div className="w-full max-w-5xl mx-auto text-center border rounded-lg border-8 p-10">
+    <div className="w-full max-w-5xl mx-auto text-center rounded-lg border-8 p-10">
       { /* Item image */ }
       <div className="transition-all duration-150 delay-300 ease-in-out ">
         <div className="relative flex flex-col items-center" ref={ itemsRef }>
@@ -112,7 +112,7 @@ export default function ProgressSlider() {
               <span className="flex items-center justify-center relative w-9 h-9 rounded-full bg-primary mb-2">
                 { item.buttonIcon }
               </span>
-              <span className="block text-sm font-medium text-secondary mb-2">{ item.desc }</span>
+              <span className="block text-sm font-medium text-secondary-content mb-2">{ item.desc }</span>
               <span className="block relative w-full bg-slate-200 h-1 rounded-full" role="progressbar" aria-valuenow={ active === index ? progress : 0 }>
                 <span className="absolute inset-0 bg-indigo-500 rounded-[inherit]" style={ { width: active === index ? `${progress}%` : '0%' } }></span>
               </span>

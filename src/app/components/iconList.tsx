@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
 
 const IconList = () => {
   return (
@@ -15,6 +16,9 @@ const IconList = () => {
       <Link href='/'>
         <FaInstagram className="text-5xl text-primary" />
       </Link>
+      <a href='mailto:seoluke7203@gmail.com'>
+        <MdEmail className="text-5xl text-primary" />
+      </a>
     </div>
   )
 }

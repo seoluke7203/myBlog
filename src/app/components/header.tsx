@@ -17,9 +17,9 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1 gap-20">
           <li><a>About me</a></li>
           <li>
-            <details>
-              <summary>Wiki</summary>
-              <ul className="p-2">
+            <details className='dropdown'>
+              <summary className=''>Wiki</summary>
+              <ul className="dropdown-content menu z-[2] w-52 rounded-box bg-base-200">
                 <li><a>Submenu 1</a></li>
                 <li><a>Submenu 2</a></li>
               </ul>

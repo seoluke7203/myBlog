@@ -1,29 +1,62 @@
+import Link from 'next/link'
+import Image, { StaticImageData } from 'next/image'
+import exampleImage from '@/app/assets/wikiImage.jpg'
+import ArtistryLogo from '@/app/assets/ArtistryLogo.png'
+import CJSFLogo from '@/app/assets/CJSFLogo.png'
+import SFULogo from '@/app/assets/SFULogo.png'
+import VisionCoding from '@/app/assets/visionCoding.png'
+
+
 interface Props {
   title: string;
-  description: string;
-  image: string;
-  link: string;
+  job: string;
+  image: StaticImageData;
+  startDate: string;
+  endDate: string;
+  current: boolean;
+  duration: string;
+  tags: string[];
 }
 // eslint-disable-next-line max-len
-export default function Card({ title='title', description='description', link='/', image='https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp' }: Props) {
+export default function Card({ title='title', job='', startDate = '', endDate = '-', image, current = false, duration = '', tags = [] }: Props) {
   return(
-    <div className="card bg-base-100 w-96 shadow-xl glass">
-      <figure>
-        <img
-          src={ image }
-          alt="Shoes" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">
-          { title }
-          <div className="badge badge-secondary">NEW</div>
-        </h2>
-        <p>{ description }</p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
+    <div className="card bg-primary w-80 shadow-xl glass">
+      <Link href="/about">
+        <div className='flex justify-center mt-5'>
+          <figure className='w-[300px] h-[300px] object-contain'>
+            <Image
+              src={ image }
+              width={ 300 }
+              height={ 300 }
+              alt="Shoes"
+              className='object-contain w-full h-full rounded-lg' />
+          </figure>
         </div>
-      </div>
+        <div className="card-body">
+          <h1 className="card-title text-xl">
+            { title }
+            { current && <div className="badge badge-secondary">Current</div> }
+          </h1>
+          <h2 className ="text-lg my-2">{ job }</h2>
+          <p className="flex justify-between">
+            <span>Started:</span>
+            <span className=''>{ startDate }</span>
+          </p>
+          <p className="flex justify-between">
+            <span>Ended:</span>
+            <span className=''>{ endDate }</span>
+          </p>
+
+          <p className='mt-2'> Duration: { duration }</p>
+
+          <div className="card-actions justify-stretch mt-5">
+            { tags.map((tag, index) => (
+              <div key={ index } className="badge badge-outline">{ tag }</div>
+            )) }
+          </div>
+        </div>
+      </Link>
+
     </div>
   )
 }
