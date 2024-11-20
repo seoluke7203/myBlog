@@ -1,37 +1,7 @@
 /* eslint-disable max-len */
-import wikiImage from '@/app/assets/wikiImage.jpg'
-import Image from 'next/image'
-import { MdOutlineTopic } from 'react-icons/md'
-import { GiSilverBullet } from 'react-icons/gi'
-import { SiBookstack } from 'react-icons/si'
-import { IoBookSharp } from 'react-icons/io5'
 import ProgressSlider from '@/app/ui/progressSlider'
 
 export default function WikiPage() {
-
-  const items = [
-    {
-      img: wikiImage,
-      desc: 'Diverse Topics',
-      buttonIcon: <MdOutlineTopic />,
-    },
-    {
-      img: wikiImage,
-      desc: 'Bullet Points',
-      buttonIcon: <GiSilverBullet />,
-    },
-    {
-      img: wikiImage,
-      desc: 'Real-World Examples',
-      buttonIcon: <SiBookstack />,
-    },
-    {
-      img: wikiImage,
-      desc: 'Detailed Explanations',
-      buttonIcon: <IoBookSharp />,
-    },
-  ]
-
 
   //   1. Diverse topics (이미지 3개 연결)
   //   2. Bullet Points (screenshots)

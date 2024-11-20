@@ -2,6 +2,7 @@
 
 import { themeChange } from 'theme-change'
 import { useEffect } from 'react'
+import Link from 'next/link'
 
 const Header = () => {
   useEffect(() => {
@@ -9,7 +10,7 @@ const Header = () => {
   }, [])
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 text-primary">
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">Blog.</a>
       </div>
@@ -25,6 +26,8 @@ const Header = () => {
               </ul>
             </details>
           </li>
+
+          <li><Link href="#projects">Projects</Link></li>
           <li><a>Contact me</a></li>
         </ul>
       </div>

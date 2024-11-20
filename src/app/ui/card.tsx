@@ -6,7 +6,6 @@ import CJSFLogo from '@/app/assets/CJSFLogo.png'
 import SFULogo from '@/app/assets/SFULogo.png'
 import VisionCoding from '@/app/assets/visionCoding.png'
 
-
 interface Props {
   title: string;
   job: string;
@@ -17,10 +16,10 @@ interface Props {
   duration: string;
   tags: string[];
 }
-// eslint-disable-next-line max-len
+
 export default function Card({ title='title', job='', startDate = '', endDate = '-', image, current = false, duration = '', tags = [] }: Props) {
   return(
-    <div className="card bg-primary w-80 shadow-xl glass">
+    <div className="card bg-primary w-80 h-[672px] shadow-xl glass">
       <Link href="/about">
         <div className='flex justify-center mt-5'>
           <figure className='w-[300px] h-[300px] object-contain'>
@@ -46,9 +45,7 @@ export default function Card({ title='title', job='', startDate = '', endDate = 
             <span>Ended:</span>
             <span className=''>{ endDate }</span>
           </p>
-
           <p className='mt-2'> Duration: { duration }</p>
-
           <div className="card-actions justify-stretch mt-5">
             { tags.map((tag, index) => (
               <div key={ index } className="badge badge-outline">{ tag }</div>
