@@ -1,4 +1,6 @@
+/* eslint-disable max-len */
 import Poster from '@/app/ui/poster'
+import wikiImage from '@/app/assets/wikiImage.jpg'
 
 export default function Projects() {
   return (
@@ -12,7 +14,7 @@ export default function Projects() {
             description={ 'Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,' }
             techStack={ [ 'React', 'TailWindCSS', 'Spring', 'MySQL', 'npm' ] }
             date={ 'Oct.2024 - Dec.2024' }
-            image={ undefined }
+            image={ wikiImage }
             link = { '' }
           />
 
@@ -22,7 +24,7 @@ export default function Projects() {
             description={ 'Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,' }
             techStack={ [ 'Next.js', 'pnpm', 'TailwindCSS', 'DaisyUI' ] }
             date={ 'Oct.2024 - Dec.2024' }
-            image={ undefined }
+            image={ wikiImage }
             link = { '' }
           />
 
@@ -32,7 +34,7 @@ export default function Projects() {
             description={ 'Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,' }
             techStack={ [ 'React', 'TailWind', 'Spring', 'MySQL' ] }
             date={ 'Oct.2024 - Dec.2024' }
-            image={ undefined }
+            image={ wikiImage }
             link = { '' }
           />
 
@@ -42,7 +44,7 @@ export default function Projects() {
             description={ 'Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,' }
             techStack={ [ 'React', 'TailWind', 'Spring', 'MySQL' ] }
             date={ 'Oct.2024 - Dec.2024' }
-            image={ undefined }
+            image={ wikiImage }
             link = { '' }
           />
         </div>
