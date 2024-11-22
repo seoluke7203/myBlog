@@ -14,18 +14,23 @@ export default {
         foreground: 'var(--foreground)',
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 35s linear infinite',
+        'infinite-scroll': 'infinite-scroll 45s linear infinite',
+        'appear': 'appear 0.2s ease-in-out',
       },
       keyframes: {
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to : { transform: 'translateX(-100%)' },
         },
+        'appear': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
-    },
+    }
   },
   daisyui: {
-    themes: [ 'light', 'dark', 'cyberpunk', 'coffee', 'lofi' ],
+    themes: [ 'light', 'dark', 'cyberpunk', 'coffee', 'lofi', 'nord' ],
   },
 
   plugins: [ daisyui ],

@@ -28,7 +28,7 @@ export default function Poster({ title, summary, description, techStack, date, i
         <p className="text-secondary-content">{ summary }</p>
         <ul className="text-secondary-content">
           { techStack.map((tech, index) => (
-            <div key={ index } className="badge badge-primary mr-5">{ tech }</div>
+            <div key={ index } className="badge odd:badge-primary even:badge-secondary mr-5">{ tech }</div>
           )) }
         </ul>
         <p className='text-secondary-content w-2/3 mt-14'> { description }</p>

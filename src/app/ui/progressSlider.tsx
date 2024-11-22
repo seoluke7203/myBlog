@@ -1,7 +1,6 @@
 // Code inspired from https://cruip.com/create-a-carousel-with-progress-indicators-using-tailwind-and-nextjs/
 /* eslint-disable max-len */
 
-
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
@@ -13,7 +12,12 @@ import { MdOutlineTopic } from 'react-icons/md'
 import { GiSilverBullet } from 'react-icons/gi'
 import { SiBookstack } from 'react-icons/si'
 import { IoBookSharp } from 'react-icons/io5'
-import wikiImage from '@/app/assets/wikiImage.jpg'
+import wikiImage from '@/app/assets/Logo/wikiImage.jpg'
+import bulletPoints from '@/app/assets/wikiImages/bulletPoints.png'
+import detailedExp from '@/app/assets/wikiImages/detailedExp.png'
+import diverseTopics from '@/app/assets/wikiImages/diverseTopics.png'
+import realWorldExample from '@/app/assets/wikiImages/realWorldExample.png'
+
 
 export default function ProgressSlider() {
 
@@ -26,22 +30,22 @@ export default function ProgressSlider() {
 
   const items = [
     {
-      img: wikiImage,
+      img: diverseTopics,
       desc: 'Diverse Topics',
       buttonIcon: <MdOutlineTopic />,
     },
     {
-      img: wikiImage,
+      img: bulletPoints,
       desc: 'Bullet Points',
       buttonIcon: <GiSilverBullet />,
     },
     {
-      img: wikiImage,
+      img: realWorldExample,
       desc: 'Real-World Examples',
       buttonIcon: <SiBookstack />,
     },
     {
-      img: wikiImage,
+      img: detailedExp,
       desc: 'Detailed Explanations',
       buttonIcon: <IoBookSharp />,
     },
@@ -76,7 +80,7 @@ export default function ProgressSlider() {
   }, [])
 
   return (
-    <div className="w-full max-w-5xl mx-auto text-center rounded-lg border-8 p-10">
+    <div className="w-full max-w-5xl mx-auto text-center rounded-lg border-8 p-10 border-secondary">
       { /* Item image */ }
       <div className="transition-all duration-150 delay-300 ease-in-out ">
         <div className="relative flex flex-col items-center" ref={ itemsRef }>
@@ -93,15 +97,12 @@ export default function ProgressSlider() {
               leaveTo="opacity-0 scale-95"
               beforeEnter={ () => heightFix() }
             >
-              <Image className="rounded-xl w-1/3 " src={ item.img } alt={ item.desc } />
+              <Image className="rounded-xl w-2/3 shadow-2xl shadow-black border-8 border-black" src={ item.img } alt={ item.desc } />
             </Transition>
           )) }
-
         </div>
       </div>
-      { /* Buttons */ }
       <div className="max-w-xs sm:max-w-sm md:max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-
         { items.map((item, index) => (
           <button
             key={ index }
@@ -113,14 +114,12 @@ export default function ProgressSlider() {
                 { item.buttonIcon }
               </span>
               <span className="block text-sm font-medium text-secondary-content mb-2">{ item.desc }</span>
-              <span className="block relative w-full bg-slate-200 h-1 rounded-full" role="progressbar" aria-valuenow={ active === index ? progress : 0 }>
+              <span className="block relative w-full bg-slate-400 h-1 rounded-full" role="progressbar" aria-valuenow={ active === index ? progress : 0 }>
                 <span className="absolute inset-0 bg-indigo-500 rounded-[inherit]" style={ { width: active === index ? `${progress}%` : '0%' } }></span>
               </span>
             </span>
           </button>
         )) }
-
-
       </div>
       <div className='mt-10'>
         <Link href="/wikiPage">

@@ -10,25 +10,16 @@ const Header = () => {
   }, [])
 
   return (
-    <div className="navbar bg-base-100 text-primary">
+    <div className="navbar glass text-primary-content">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">Blog.</a>
+        <Link href="/" className="btn btn-ghost text-xl">Blog.</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-20">
-          <li><a>About me</a></li>
-          <li>
-            <details className='dropdown'>
-              <summary className=''>Wiki</summary>
-              <ul className="dropdown-content menu z-[2] w-52 rounded-box bg-base-200">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <li><Link href="#projects">Projects</Link></li>
-          <li><a>Contact me</a></li>
+          <li><Link href="/about">About me</Link></li>
+          <li><Link href="/wikiPage">Wiki</Link></li>
+          <li><Link href="/#projects">Projects</Link></li>
+          <li><Link href="/contact">Contact me</Link></li>
         </ul>
       </div>
       <div className="navbar-end">
@@ -37,7 +28,7 @@ const Header = () => {
           <option value="">Default</option>
           <option value="light">Light</option>
           <option value="dark">Dark</option>
-          <option value="cyberpunk">Cyberpunk</option>
+          <option value="nord">Cyberpunk</option>
           <option value="coffee">Coffee</option>
           <option value="lofi">Lofi</option>
         </select>

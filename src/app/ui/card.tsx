@@ -1,10 +1,5 @@
 import Link from 'next/link'
 import Image, { StaticImageData } from 'next/image'
-import exampleImage from '@/app/assets/wikiImage.jpg'
-import ArtistryLogo from '@/app/assets/ArtistryLogo.png'
-import CJSFLogo from '@/app/assets/CJSFLogo.png'
-import SFULogo from '@/app/assets/SFULogo.png'
-import VisionCoding from '@/app/assets/visionCoding.png'
 
 interface Props {
   title: string;
@@ -34,7 +29,7 @@ export default function Card({ title='title', job='', startDate = '', endDate = 
         <div className="card-body">
           <h1 className="card-title text-xl">
             { title }
-            { current && <div className="badge badge-secondary">Current</div> }
+            { current && <div className="badge badge-accent">Current</div> }
           </h1>
           <h2 className ="text-lg my-2">{ job }</h2>
           <p className="flex justify-between">

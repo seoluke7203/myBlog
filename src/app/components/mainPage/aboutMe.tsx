@@ -2,11 +2,11 @@
 // Code Inspired from https://cruip.com/create-an-infinite-horizontal-scroll-animation-with-tailwind-css/
 
 import Card from '@/app/ui/card'
-import ArtistryLogo from '@/app/assets/ArtistryLogo.png'
-import CJSFLogo from '@/app/assets/CJSFLogo.png'
-import SFULogo from '@/app/assets/SFULogo.png'
-import VisionCodingLogo from '@/app/assets/visionCoding.png'
-import Tacademy from '@/app/assets/Tacademy.jpg'
+import ArtistryLogo from '@/app/assets/Logo/ArtistryLogo.png'
+import CJSFLogo from '@/app/assets/Logo/CJSFLogo.png'
+import SFULogo from '@/app/assets/Logo/SFULogo.png'
+import VisionCodingLogo from '@/app/assets/Logo/visionCoding.png'
+import Tacademy from '@/app/assets/Logo/Tacademy.jpg'
 
 const AboutMe = () => {
   return (

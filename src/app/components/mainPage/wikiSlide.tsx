@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import ProgressSlider from '@/app/ui/progressSlider'
 
-export default function WikiPage() {
+export default function wikiSlide() {
 
   //   1. Diverse topics (이미지 3개 연결)
   //   2. Bullet Points (screenshots)

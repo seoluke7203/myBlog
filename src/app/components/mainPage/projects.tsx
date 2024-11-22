@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import Poster from '@/app/ui/poster'
-import wikiImage from '@/app/assets/wikiImage.jpg'
+import wikiImage from '@/app/assets/Logo/wikiImage.jpg'
 
 export default function Projects() {
   return (

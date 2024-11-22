@@ -31,14 +31,14 @@ body {
   --foreground: #171717;
 }
 
-[data-theme='cyberpunk'] {
-  --background: #171717;
-  --foreground: #ff00ff;
+[data-theme='nord'] {
+  --background: #2e3440;
+  --foreground: #d8dee9;
 }
 
 [data-theme='coffee'] {
   --background: #f2e2d2;
-  --foreground: #4a2c2c;
+  --foreground: #f4e2e2;
 }
 
 [data-theme='lofi'] {

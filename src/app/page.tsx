@@ -1,40 +1,41 @@
-'use client'
-// not sure it should be client
 
-import Header from '@/app/components/header'
-import Hero from '@/app/components/hero'
-import AboutMe from '@/app/components/aboutMe'
-import WikiPage from '@/app/components/wikiPage'
-import Projects from '@/app/components/projects'
+import Header from '@/app/components/common/header'
+import Hero from '@/app/components/mainPage/hero'
+import AboutMe from '@/app/components/mainPage/aboutMe'
+import WikiSlide from '@/app/components/mainPage/wikiSlide'
+import Projects from '@/app/components/mainPage/projects'
+import handleScrollToTop from '@/app/util/mouseScrollToTop'
+import IconList from '@/app/components/mainPage/iconList'
 
 export default function Home() {
-  const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
-
   return (
     <div>
-      <div id="top">
+      <div id="top" className='sticky top-0 z-50'>
         <Header />
       </div>
-      <Hero />
-      <div id ="aboutMe">
-        <AboutMe/>
+      <div className="flex flex-col ">
+        <aside className='sticky top-2/4 z-50'>
+          <div className="absolute">
+            <IconList />
+          </div>
+        </aside>
+        <Hero />
+        <div id ="aboutMe">
+          <AboutMe/>
+        </div>
+        <WikiSlide />
+        <div id ="projects">
+          <Projects />
+        </div>
+        <div className='text-center p-10'>
+          <button
+            onClick={ handleScrollToTop }
+            className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg animate-bounce"
+          > Back to Top
+          </button>
+        </div>
       </div>
-      <WikiPage />
-      <div id ="projects">
-        <Projects />
-      </div>
-      <div className='text-center p-10'>
-        <button
-          onClick={ handleScrollToTop }
-          className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
-        > Back to Top
-        </button>
-      </div>
+
     </div>
   )
 }
