@@ -2,6 +2,7 @@ import Hero from '@/app/components/aboutPage/hero'
 import Timeline from '@/app/components/aboutPage/timeline'
 import Header from '@/app/components/common/header'
 import Education from '@/app/components/aboutPage/education'
+import Footer from '@/app/components/common/footer'
 
 export default function Page() {
   return (
@@ -30,6 +31,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

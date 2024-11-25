@@ -6,6 +6,7 @@ import WikiSlide from '@/app/components/mainPage/wikiSlide'
 import Projects from '@/app/components/mainPage/projects'
 import handleScrollToTop from '@/app/util/mouseScrollToTop'
 import IconList from '@/app/components/mainPage/iconList'
+import Footer from '@/app/components/common/footer'
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <Footer />
 
     </div>
   )

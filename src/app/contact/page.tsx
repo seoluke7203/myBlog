@@ -1,3 +1,4 @@
+import Footer from '@/app/components/common/footer'
 import Header from '@/app/components/common/header'
 
 export default function Page() {
@@ -7,6 +8,7 @@ export default function Page() {
         <Header />
       </div>
       <div>Hello! this is contact page</div>
+      <Footer />
     </div>
   )
 }
