@@ -77,7 +77,7 @@ export default function Timeline() {
             <div className="text-2xl font-black text-center mt-5">Full-stack Developer Learner</div>
             <div className="text-xl font-black text-center my-3">SK T Academy</div>
             <div className='w-full place-items-center'>
-              <figure className='w-[100px] h-[100px] place-items-end my-5 my-5'>
+              <figure className='w-[100px] h-[100px] place-items-end my-5'>
                 <Image
                   src={ Tacademy }
                   alt="logo"
@@ -91,7 +91,7 @@ export default function Timeline() {
               </div>
             </div>
       iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
-      been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
+      been the primary part of consumer desktop offerings since its debut in August 1998,
       and has evolved through seven distinct forms
           </div>
           <hr />
@@ -211,7 +211,7 @@ export default function Timeline() {
               </div>
             </div>
             <ul className='list-disc list-inside text-start space-y-2'>
-              <li>Developed a game called "Ancient Treasure Adventure".</li>
+              <li>Developed a game called &quot;Ancient Treasure Adventure&quot;s.</li>
               <li>Led a team of four in a research project, under the guidance of Dr. Imran, focused on exploring efficient
                 methods of teaching Python to new learners.</li>
               <li>Implemented innovative teaching methodologies to enhance the Python learning experience within the game.</li>
