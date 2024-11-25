@@ -12,7 +12,7 @@ export default function Projects() {
             title={ 'Galaxy Ticketing Web Application' }
             summary={ 'A fullstack web application that allows users to purchase tickets for events and concerts.' }
             description={ 'Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,' }
-            techStack={ [ 'React', 'TailWindCSS', 'Spring', 'MySQL', 'npm' ] }
+            techStack={ [ 'React', 'TailWindCSS', 'Spring', 'MySQL', 'npm', 'Vite' ] }
             date={ 'Oct.2024 - Dec.2024' }
             image={ wikiImage }
             link = { '' }
@@ -22,7 +22,7 @@ export default function Projects() {
             title={ 'Blog' }
             summary={ 'A fullstack web application that allows users to purchase tickets for events and concerts.' }
             description={ 'Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,' }
-            techStack={ [ 'Next.js', 'pnpm', 'TailwindCSS', 'DaisyUI' ] }
+            techStack={ [ 'Next.js', 'pnpm', 'TailwindCSS', 'DaisyUI', 'Vercel' ] }
             date={ 'Oct.2024 - Dec.2024' }
             image={ wikiImage }
             link = { '' }

@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md'
 
 const IconList = () => {
   return (
-    <div className='flex flex-col gap-4 rounded-full ml-4 p-3 border-8 bg-white border-black shadow-2xl border-double'>
+    <div className='flex flex-col gap-4 rounded-full ml-4 p-3 border-8 border-primary shadow-2xl border-double bg-white'>
       <Link href='https://github.com/seoluke7203'>
         <FaGithub className="text-3xl text-primary" />
       </Link>

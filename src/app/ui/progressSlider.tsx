@@ -12,7 +12,6 @@ import { MdOutlineTopic } from 'react-icons/md'
 import { GiSilverBullet } from 'react-icons/gi'
 import { SiBookstack } from 'react-icons/si'
 import { IoBookSharp } from 'react-icons/io5'
-import wikiImage from '@/app/assets/Logo/wikiImage.jpg'
 import bulletPoints from '@/app/assets/wikiImages/bulletPoints.png'
 import detailedExp from '@/app/assets/wikiImages/detailedExp.png'
 import diverseTopics from '@/app/assets/wikiImages/diverseTopics.png'
@@ -84,7 +83,6 @@ export default function ProgressSlider() {
       { /* Item image */ }
       <div className="transition-all duration-150 delay-300 ease-in-out ">
         <div className="relative flex flex-col items-center" ref={ itemsRef }>
-
           { items.map((item, index) => (
             <Transition
               key={ index }
@@ -97,7 +95,9 @@ export default function ProgressSlider() {
               leaveTo="opacity-0 scale-95"
               beforeEnter={ () => heightFix() }
             >
-              <Image className="rounded-xl w-2/3 shadow-2xl shadow-black border-8 border-black" src={ item.img } alt={ item.desc } />
+              <div className='stack'>
+                <Image className="rounded-xl w-2/3 shadow-2xl shadow-black border-8 border-black" src={ item.img } alt={ item.desc } />
+              </div>
             </Transition>
           )) }
         </div>

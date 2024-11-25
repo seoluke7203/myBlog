@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="navbar glass text-primary-content">
       <div className="navbar-start">
-        <Link href="/" className="btn btn-ghost text-xl">Blog.</Link>
+        <Link href="/" className="btn btn-ghost text-xl rounded-lg">Blog.</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-20">
