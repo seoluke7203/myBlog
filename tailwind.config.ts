@@ -30,7 +30,7 @@ export default {
     }
   },
   daisyui: {
-    themes: [ 'light', 'dark', 'cyberpunk', 'coffee', 'lofi', 'nord' ],
+    themes: [ 'cyberpunk', 'light', 'dark', 'coffee', 'lofi', 'nord' ],
   },
 
   plugins: [ daisyui ],

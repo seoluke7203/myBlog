@@ -47,14 +47,33 @@ export default function Timeline() {
                 )) }
               </div>
             </div>
-            <ul className="list-disc list-inside text-start space-y-2">
-              <li>Utilized Agile methodology with two-week sprint, tracking and documenting ongoing progress of assigned tasks in Jira.</li>
-              <li>Ensured continuous improvement by incorporating weekly code reviews to enhance the overall development process.</li>
-              <li>Implemented Progressive Web Application using Next.js, Nest.js, Typescript,
+            <div className="diff aspect-[16/7] rounded-xl">
+              <div className="diff-item-1">
+                <div className='bg-primary text-primary-content grid place-content-center'>
+                  <ul className="list-disc list-inside text-start space-y-2">
+                    <li>Utilized Agile methodology with two-week sprint, tracking and documenting ongoing progress of assigned tasks in Jira.</li>
+                    <li>Ensured continuous improvement by incorporating weekly code reviews to enhance the overall development process.</li>
+                    <li>Implemented Progressive Web Application using Next.js, Nest.js, Typescript,
                 and Drizzle ORM, meeting design requirements through Tailwind, Headless UI, and Daisy UI, and deployed using Azure.</li>
-              <li>Designed, implemented, and documented a relational database schema utilizing PostgreSQL, including
+                    <li>Designed, implemented, and documented a relational database schema utilizing PostgreSQL, including
                 entity relationships and attribute definitions to facilitate future maintenance, and understanding for other team members.</li>
-            </ul>
+                  </ul>
+                </div>
+              </div>
+              <div className="diff-item-2">
+                <div className='bg-base-200 grid place-content-center'>
+                  <ul className="list-disc list-inside text-start space-y-2">
+                    <li>Utilized Agile methodology with two-week sprint, tracking and documenting ongoing progress of assigned tasks in Jira.</li>
+                    <li>Ensured continuous improvement by incorporating weekly code reviews to enhance the overall development process.</li>
+                    <li>Implemented Progressive Web Application using Next.js, Nest.js, Typescript,
+                and Drizzle ORM, meeting design requirements through Tailwind, Headless UI, and Daisy UI, and deployed using Azure.</li>
+                    <li>Designed, implemented, and documented a relational database schema utilizing PostgreSQL, including
+                entity relationships and attribute definitions to facilitate future maintenance, and understanding for other team members.</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="diff-resizer"></div>
+            </div>
           </div>
           <hr />
         </li>

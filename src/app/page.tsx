@@ -8,7 +8,9 @@ import handleScrollToTop from '@/app/util/mouseScrollToTop'
 import IconList from '@/app/components/mainPage/iconList'
 import Footer from '@/app/components/common/footer'
 
+
 export default function Home() {
+
   return (
     <div>
       <div id="top" className='sticky top-0 z-50'>

@@ -1,23 +1,26 @@
 import { StaticImageData } from 'next/image'
 import { FaSquareGithub } from 'react-icons/fa6'
 import Link from 'next/link'
+import Image from 'next/image'
+import wikiImage from '@/app/assets/Logo/wikiImage.jpg'
 
 interface Props {
   title: string;
   summary: string;
   description: string;
+  descriptionKr: string;
   techStack: string[];
   date: string;
   image: StaticImageData;
   link: string;
 }
 
-export default function Poster({ title, summary, description, techStack, date, image, link }:Props) {
+export default function Poster({ title, summary, description, descriptionKr, techStack, date, image, link }:Props) {
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+        <Image
+          src={ wikiImage }
           alt="Album" />
       </figure>
       <div className="card-body">
@@ -31,7 +34,18 @@ export default function Poster({ title, summary, description, techStack, date, i
             <div key={ index } className="badge odd:badge-primary even:badge-secondary mr-5">{ tech }</div>
           )) }
         </ul>
-        <p className='text-secondary-content w-2/3 mt-14'> { description }</p>
+        <div className="diff aspect-[12/6] rounded-xl">
+          <div className="diff-item-1">
+            <div className="bg-primary text-primary-content grid place-content-center font-black">
+              { descriptionKr }
+            </div>
+          </div>
+          <div className="diff-item-2">
+            <div className="bg-base-200 grid text-primary-content place-content-center font-black">{ description }</div>
+          </div>
+          <div className="diff-resizer">
+          </div>
+        </div>
         <div className="card-actions justify-end">
           <Link href={ link }>
             <button className="btn btn-primary font-bold">Visit Github

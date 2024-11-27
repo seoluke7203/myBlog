@@ -17,9 +17,7 @@ import detailedExp from '@/app/assets/wikiImages/detailedExp.png'
 import diverseTopics from '@/app/assets/wikiImages/diverseTopics.png'
 import realWorldExample from '@/app/assets/wikiImages/realWorldExample.png'
 
-
 export default function ProgressSlider() {
-
   const duration: number = 5000
   const itemsRef = useRef<HTMLDivElement>(null)
   const frame = useRef<number>(0)
@@ -109,21 +107,21 @@ export default function ProgressSlider() {
             className="p-2 rounded focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 group"
             onClick={ () => { setActive(index); setProgress(0) } }
           >
-            <span className={ `text-center flex flex-col items-center ${active === index ? '' : 'opacity-50 group-hover:opacity-100 group-focus:opacity-100 transition-opacity'}` }>
-              <span className="flex items-center justify-center relative w-9 h-9 rounded-full bg-primary mb-2">
+            <div className={ `text-center flex flex-col items-center ${active === index ? '' : 'opacity-50 group-hover:opacity-100 group-focus:opacity-100 transition-opacity'}` }>
+              <div className="flex items-center justify-center relative w-9 h-9 rounded-full bg-primary mb-2">
                 { item.buttonIcon }
-              </span>
-              <span className="block text-sm font-medium text-secondary-content mb-2">{ item.desc }</span>
-              <span className="block relative w-full bg-slate-400 h-1 rounded-full" role="progressbar" aria-valuenow={ active === index ? progress : 0 }>
-                <span className="absolute inset-0 bg-indigo-500 rounded-[inherit]" style={ { width: active === index ? `${progress}%` : '0%' } }></span>
-              </span>
-            </span>
+              </div>
+              <div className="block text-sm font-medium text-secondary-content mb-2">{ item.desc }</div>
+              <div aria-label="Progress Bar" className="block relative w-full bg-slate-400 h-1 rounded-full" role="progressbar" aria-valuenow={ active === index ? progress : 0 }>
+                <div className="absolute inset-0 bg-indigo-500 rounded-[inherit]" style={ { width: active === index ? `${progress}%` : '0%' } }></div>
+              </div>
+            </div>
           </button>
         )) }
       </div>
       <div className='mt-10'>
         <Link href="/wikiPage">
-          <button className="btn bg-primary text-secondary-content px-10 glass">Move to Wikipage </button>
+          <button className="btn bg-primary text-secondary-content px-10 glass">Move to Wikipage</button>
         </Link>
       </div>
     </div>
