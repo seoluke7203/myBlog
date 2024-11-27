@@ -31,17 +31,17 @@ export default function Poster({ title, summary, description, descriptionKr, tec
         <p className="text-secondary-content">{ summary }</p>
         <ul className="text-secondary-content">
           { techStack.map((tech, index) => (
-            <div key={ index } className="badge odd:badge-primary even:badge-secondary mr-5">{ tech }</div>
+            <li key={ index } className="badge odd:badge-primary even:badge-secondary mr-5">{ tech }</li>
           )) }
         </ul>
         <div className="diff aspect-[12/6] rounded-xl">
           <div className="diff-item-1">
-            <div className="bg-primary text-primary-content grid place-content-center font-black">
+            <div className="px-8 bg-secondary text-primary-content grid place-content-center font-black">
               { descriptionKr }
             </div>
           </div>
           <div className="diff-item-2">
-            <div className="bg-base-200 grid text-primary-content place-content-center font-black">{ description }</div>
+            <div className="px-8 bg-base-200 grid text-primary-content place-content-center font-black">{ description }</div>
           </div>
           <div className="diff-resizer">
           </div>

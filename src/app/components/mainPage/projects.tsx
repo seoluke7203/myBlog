@@ -18,17 +18,18 @@ export default function Projects() {
             image={ wikiImage }
             link = { '' }
           />
-
-          <Poster
-            title={ 'Blog' }
-            summary={ 'A fullstack web application that allows users to purchase tickets for events and concerts.' }
-            description={ 'Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,' }
-            descriptionKr= { '한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 ' }
-            techStack={ [ 'Next.js', 'pnpm', 'TailwindCSS', 'DaisyUI', 'Vercel' ] }
-            date={ 'Oct.2024 - Dec.2024' }
-            image={ wikiImage }
-            link = { '' }
-          />
+          <div id="Blog">
+            <Poster
+              title={ 'Blog' }
+              summary={ 'A fullstack web application that allows users to purchase tickets for events and concerts.' }
+              description={ 'Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,Fill me in later,' }
+              descriptionKr= { '한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 한국어 ' }
+              techStack={ [ 'Next.js', 'pnpm', 'TailwindCSS', 'DaisyUI', 'Vercel' ] }
+              date={ 'Oct.2024 - Dec.2024' }
+              image={ wikiImage }
+              link = { '' }
+            />
+          </div>
 
           <Poster
             title={ 'FitPulse' }

@@ -16,6 +16,7 @@ export default {
       animation: {
         'infinite-scroll': 'infinite-scroll 45s linear infinite',
         'appear': 'appear 0.2s ease-in-out',
+        'typing': 'typing 2s steps(15) alternate, blink 2s infinite'
       },
       keyframes: {
         'infinite-scroll': {
@@ -26,6 +27,19 @@ export default {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        'typing': {
+          '0%': { width: '0%',
+            visibility: 'hidden' },
+          '100%': { width: '100%' },
+        },
+        'blink': {
+          '50%': {
+            borderColor: 'transparent'
+          },
+          '100%': {
+            borderColor: 'white'
+          }
+        }
       },
     }
   },

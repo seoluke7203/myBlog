@@ -46,3 +46,7 @@ body {
   --background: #f2e2d2;
   --foreground: #4a2c2c;
 }
+
+body {
+  /* cursor: url('../app/assets/circle.svg'), auto; */
+}
