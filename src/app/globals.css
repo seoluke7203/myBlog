@@ -48,5 +48,9 @@ body {
 }
 
 body {
-  /* cursor: url('../app/assets/circle.svg'), auto; */
+  cursor: url('../app/assets/circle.svg'), auto;
+}
+
+.cursor-pointer *, .btn, button *, .card-click, ul li Link, a {
+  cursor: url('../app/assets/circle2.svg'), auto;
 }

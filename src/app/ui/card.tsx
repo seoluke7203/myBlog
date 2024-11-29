@@ -16,7 +16,7 @@ export default function Card({ title='title', job='', startDate = '', endDate = 
   return(
     <div className="indicator">
       { current && <span className="indicator-item badge badge-error indicator-top indicator-center">Current</span> }
-      <div className="card bg-primary w-80 h-[672px] shadow-xl glass">
+      <div className="cursor-pointer card bg-primary w-80 h-[672px] shadow-xl glass">
         <Link href="/about">
           <div className='flex justify-center mt-5'>
             <figure className='w-[300px] h-[300px] object-contain'>

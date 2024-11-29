@@ -21,6 +21,7 @@ export default function Poster({ title, summary, description, descriptionKr, tec
       <figure>
         <Image
           src={ wikiImage }
+          width={ 500 }
           alt="Album" />
       </figure>
       <div className="card-body">

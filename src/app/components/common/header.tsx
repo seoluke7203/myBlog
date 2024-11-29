@@ -32,10 +32,10 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-20">
-            <li><Link href="/about">About me</Link></li>
-            <li><Link href="/wikiPage">Wiki</Link></li>
-            <li><Link href="/#projects">Projects</Link></li>
-            <li><Link href="/contact">Contact me</Link></li>
+            <li className='cursor-pointer'><Link href="/about">About me</Link></li>
+            <li className='cursor-pointer'><Link href="/wikiPage">Wiki</Link></li>
+            <li className='cursor-pointer'><Link href="/#projects">Projects</Link></li>
+            <li className='cursor-pointer'><Link href="/contact">Contact me</Link></li>
           </ul>
         </div>
         <div className="navbar-end">
