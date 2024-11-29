@@ -44,7 +44,7 @@ export default {
     }
   },
   daisyui: {
-    themes: [ 'cyberpunk', 'light', 'dark', 'coffee', 'lofi', 'nord' ],
+    themes: [ 'nord' ],
   },
 
   plugins: [ daisyui ],
