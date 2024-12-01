@@ -13,9 +13,10 @@ interface Props {
   date: string;
   image: StaticImageData;
   link: string;
+  id: number;
 }
 
-export default function Poster({ title, summary, description, descriptionKr, techStack, date, image, link }:Props) {
+export default function Poster({ id, title, summary, description, descriptionKr, techStack, date, image, link }:Props) {
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
       <figure>
@@ -32,7 +33,7 @@ export default function Poster({ title, summary, description, descriptionKr, tec
         <p className="text-secondary-content">{ summary }</p>
         <ul className="text-secondary-content">
           { techStack.map((tech, index) => (
-            <li key={ index } className="badge odd:badge-primary even:badge-secondary mr-5">{ tech }</li>
+            <li key={ index } className="badge odd:badge-primary even:badge-secondary mr-5 p-3 "> <span className='text-white'>{ tech }</span></li>
           )) }
         </ul>
         <div className="diff aspect-[12/6] rounded-xl">
@@ -47,7 +48,12 @@ export default function Poster({ title, summary, description, descriptionKr, tec
           <div className="diff-resizer">
           </div>
         </div>
-        <div className="card-actions justify-end">
+        <div className="text-primary-content text-center">Move the resizer to translate</div>
+        <div className="card-actions justify-between flex items-center">
+          <Link href={ `project/${id}` }>
+            <button className="btn btn-primary font-bold">View More
+            </button>
+          </Link>
           <Link href={ link }>
             <button className="btn btn-primary font-bold">Visit Github
               <FaSquareGithub className="inline-block text-5xl ml-2" />

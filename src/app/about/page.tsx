@@ -12,20 +12,23 @@ export default function Page() {
       </div>
       <Hero />
       <div className='m-2 p-2'>
-        <div tabIndex= { 0 } className="collapse bg-base-200">
-          <div className="collapse-title text-3xl font-medium text-black divider">Experience</div>
+        <div tabIndex= { 0 } className="collapse collapse-arrow bg-base-200">
+          <input type="checkbox"></input>
+          <div className="collapse-title text-3xl font-medium text-black text-center">Experience</div>
           <div className="collapse-content">
             <Timeline />
           </div>
         </div>
-        <div tabIndex= { 2 } className="collapse bg-base-200 my-2">
-          <div className="collapse-title text-3xl font-medium text-black divider">Education</div>
+        <div tabIndex= { 2 } className="collapse collapse-arrow bg-base-200 my-2">
+          <input type="checkbox"></input>
+          <div className="collapse-title text-3xl font-medium text-black text-center">Education</div>
           <div className="collapse-content">
             <Education />
           </div>
         </div>
-        <div tabIndex= { 3 } className="collapse bg-base-200 my-2">
-          <div className="collapse-title text-3xl font-medium text-black divider">Other Activities</div>
+        <div tabIndex= { 3 } className="collapse collapse-arrow bg-base-200 my-2">
+          <input type="checkbox"></input>
+          <div className="collapse-title text-3xl font-medium text-black text-center">Other Activities</div>
           <div className="collapse-content">
             <Education />
           </div>

@@ -15,37 +15,50 @@ interface Props {
 export default function Card({ title='title', job='', startDate = '', endDate = '-', image, current = false, duration = '', tags = [] }: Props) {
   return(
     <div className="indicator">
-      { current && <span className="indicator-item badge badge-error indicator-top indicator-center">Current</span> }
-      <div className="cursor-pointer card bg-primary w-80 h-[672px] shadow-xl glass">
+      { current && (
+        <span className="indicator-item badge badge-error indicator-top indicator-start text-white p-4 mt-8 ml-16">
+            Current
+        </span>
+      ) }
+      <div className="cursor-pointer card bg-primary w-80 h-[600px] shadow-xl glass">
         <Link href="/about">
-          <div className='flex justify-center mt-5'>
-            <figure className='w-[300px] h-[300px] object-contain'>
+          <div className="flex justify-center mt-5">
+            <figure className="w-[110px] h-[110px] mt-10 object-contain">
               <Image
                 src={ image }
-                width={ 300 }
-                height={ 300 }
-                placeholder='blur' // using blur to optimize the image loading with lazy loading:
+                width={ 200 }
+                height={ 200 }
+                placeholder="blur"
                 alt="logo"
-                className='object-contain w-full h-full rounded-lg' />
+                className="object-contain w-full h-full rounded-lg"
+              />
             </figure>
           </div>
-          <div className="card-body">
-            <h1 className="card-title text-xl">
-              { title }
-            </h1>
-            <h2 className ="text-lg my-2">{ job }</h2>
-            <p className="flex justify-between">
-              <span>Started:</span>
-              <span className=''>{ startDate }</span>
-            </p>
-            <p className="flex justify-between">
-              <span>Ended:</span>
-              <span className=''>{ endDate }</span>
-            </p>
-            <p className='mt-2'> Duration: { duration }</p>
-            <div className="card-actions justify-stretch mt-5">
+          <div className="card-body flex flex-col justify-between gap-y-5 h-[300px]">
+            <div className="flex flex-col items-start gap-y-2">
+              <h1 className="card-title text-2xl text-start">{ job }</h1>
+              <h2 className="text-lg text-start">{ title }</h2>
+            </div>
+
+            <div className="flex flex-col gap-y-2">
+              <p className="flex justify-between">
+                <span>Started:</span>
+                <span>{ startDate }</span>
+              </p>
+              <p className="flex justify-between">
+                <span>Ended:</span>
+                <span>{ endDate }</span>
+              </p>
+              <p className="mt-2">Duration: { duration }</p>
+            </div>
+          </div>
+          <div className="card-foote">
+            <div className='divider'>Stack</div>
+            <div className="flex flex-wrap justify-start ml-3 gap-2">
               { tags.map((tag, index) => (
-                <div key={ index } className="badge badge-outline">{ tag }</div>
+                <div key={ index } className="badge badge-outline">
+                  { tag }
+                </div>
               )) }
             </div>
           </div>

@@ -59,7 +59,7 @@ const Hero = () => {
             <div className="flex justify-center">
               <Link href="#aboutMe" scroll={ true }>
                 <button
-                  className="btn btn-primary rounded-lg mx-10 text-secondary-content"
+                  className="btn btn-primary rounded-lg mx-10 text-gray-200"
                   onClick={ () => handleScrollToSection('aboutMe') }
                 >
                   Get Started

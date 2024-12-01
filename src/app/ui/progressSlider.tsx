@@ -80,7 +80,7 @@ export default function ProgressSlider() {
     <div className="w-full max-w-5xl mx-auto text-center rounded-lg border-8 p-10 border-secondary">
       { /* Item image */ }
       <div className="transition-all duration-150 delay-300 ease-in-out ">
-        <div className="relative flex flex-col h-[490px] items-center" ref={ itemsRef }>
+        <div className="relative flex flex-col h-[320px] items-center" ref={ itemsRef }>
           { items.map((item, index) => (
             <Transition
               key={ index }

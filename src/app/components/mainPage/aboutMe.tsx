@@ -154,7 +154,14 @@ const AboutMe = () => {
             </li>
           </ul>
         </div>
+        <div className="pt-6 text-xl flex justify-center">
+          <div className='bg-white text-primary text-center rounded-full inline-block px-4 py-2'>
+            <span className='font-bold text-2xl '>Click</span> on the cards for more details
+          </div>
+        </div>
+
       </div>
+
     </div>
   )
 }
