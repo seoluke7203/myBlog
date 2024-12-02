@@ -7,8 +7,8 @@ import wikiImage from '@/app/assets/Logo/wikiImage.jpg'
 interface Props {
   title: string;
   summary: string;
-  description: string;
-  descriptionKr: string;
+  description: string[];
+  descriptionKr: string[];
   techStack: string[];
   date: string;
   image: StaticImageData;
@@ -19,44 +19,53 @@ interface Props {
 export default function Poster({ id, title, summary, description, descriptionKr, techStack, date, image, link }:Props) {
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
-      <figure>
+      <figure className='w-[500px]' >
         <Image
           src={ wikiImage }
           width={ 500 }
-          alt="Album" />
+          alt="Album"
+          className='object-fill w-full h-full'
+        />
       </figure>
-      <div className="card-body">
-        <div className='flex justify-between items-start'>
+      <div className="card-body mt-4">
+        <div className='flex justify-between items-start flex-col mb-2'>
+          <p className="text-primary text-start mr-2">{ date } </p>
           <h2 className="text-2xl card-title text-secondary-content">{ title }</h2>
-          <p className="text-secondary-content text-right mr-2">{ date } </p>
         </div>
+
         <p className="text-secondary-content">{ summary }</p>
         <ul className="text-secondary-content">
           { techStack.map((tech, index) => (
-            <li key={ index } className="badge odd:badge-primary even:badge-secondary mr-5 p-3 "> <span className='text-white'>{ tech }</span></li>
+            <li key={ index } className="badge odd:badge-primary even:badge-secondary mr-2 p-3 "> <span className='text-white'>{ tech }</span></li>
           )) }
         </ul>
-        <div className="diff aspect-[12/6] rounded-xl">
+        <div className="diff aspect-[12/6] rounded-xl mt-2">
           <div className="diff-item-1">
-            <div className="px-8 bg-secondary text-primary-content grid place-content-center font-black">
-              { descriptionKr }
+            <div className="px-8 bg-primary text-white grid text-primary-content place-content-center leading-loose font-light">
+              { descriptionKr.map((paragraph, index) =>(
+                <p key={ index }>{ paragraph } <br/><br/></p>
+              )) }
             </div>
           </div>
           <div className="diff-item-2">
-            <div className="px-8 bg-base-200 grid text-primary-content place-content-center font-black">{ description }</div>
+            <div className="px-8 bg-base-300 grid text-primary-content place-content-center leading-loose font-light">
+              { description.map((paragraph, index) =>(
+                <p key={ index }>{ paragraph } <br/><br/></p>
+              )) }
+            </div>
           </div>
           <div className="diff-resizer">
           </div>
         </div>
-        <div className="text-primary-content text-center">Move the resizer to translate</div>
+        <div className="text-primary-content text-center text-sm">Move the resizer to translate</div>
         <div className="card-actions justify-between flex items-center">
           <Link href={ `project/${id}` }>
-            <button className="btn btn-primary font-bold">View More
+            <button className="btn btn-primary font-bold text-white rounded-xl">View More
             </button>
           </Link>
           <Link href={ link }>
-            <button className="btn btn-primary font-bold">Visit Github
-              <FaSquareGithub className="inline-block text-5xl ml-2" />
+            <button>
+              <FaSquareGithub className="text-5xl text-black" />
             </button>
           </Link>
         </div>

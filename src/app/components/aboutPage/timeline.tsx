@@ -6,7 +6,7 @@ import VisionCodingLogo from '@/app/assets/Logo/visionCoding.png'
 import Tacademy from '@/app/assets/Logo/Tacademy.jpg'
 
 export default function Timeline() {
-  const ArtistryStack = [ 'Next.js', 'TypeScript', 'TailwindCSS', 'DaisyUi', 'Nest.js', 'DrizzleORM', 'PostgreSQL', 'Jira' ]
+  const ArtistryStack = [ 'Next.js', 'TypeScript', 'TailwindCSS', 'DaisyUi', 'Nest.js', 'DrizzleORM', 'PostgreSQL', 'Jira', 'Docker' ]
   const TacademyStack = [ 'React', 'Spring', 'Docker', 'AWS', 'MySQL', 'Next.js' ]
   const VisionStack = [ 'Python', 'Machine Learning', 'Artificial Intelligence' ]
   const CJSFWStack = [ 'JavaScript', 'CSS', 'Docker', 'Drupal' ]
@@ -47,33 +47,14 @@ export default function Timeline() {
                 )) }
               </div>
             </div>
-            <div className="diff aspect-[16/7] rounded-xl">
-              <div className="diff-item-1">
-                <div className='bg-primary text-primary-content grid place-content-center'>
-                  <ul className="list-disc list-inside text-start space-y-2">
-                    <li>Utilized Agile methodology with two-week sprint, tracking and documenting ongoing progress of assigned tasks in Jira.</li>
-                    <li>Ensured continuous improvement by incorporating weekly code reviews to enhance the overall development process.</li>
-                    <li>Implemented Progressive Web Application using Next.js, Nest.js, Typescript,
+            <ul className="list-disc list-inside text-start space-y-2">
+              <li>Utilized Agile methodology with two-week sprint, tracking and documenting ongoing progress of assigned tasks in Jira.</li>
+              <li>Ensured continuous improvement by incorporating weekly code reviews to enhance the overall development process.</li>
+              <li>Implemented Progressive Web Application using Next.js, Nest.js, Typescript,
                 and Drizzle ORM, meeting design requirements through Tailwind, Headless UI, and Daisy UI, and deployed using Azure.</li>
-                    <li>Designed, implemented, and documented a relational database schema utilizing PostgreSQL, including
+              <li>Designed, implemented, and documented a relational database schema utilizing PostgreSQL, including
                 entity relationships and attribute definitions to facilitate future maintenance, and understanding for other team members.</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="diff-item-2">
-                <div className='bg-base-200 grid place-content-center'>
-                  <ul className="list-disc list-inside text-start space-y-2">
-                    <li>Utilized Agile methodology with two-week sprint, tracking and documenting ongoing progress of assigned tasks in Jira.</li>
-                    <li>Ensured continuous improvement by incorporating weekly code reviews to enhance the overall development process.</li>
-                    <li>Implemented Progressive Web Application using Next.js, Nest.js, Typescript,
-                and Drizzle ORM, meeting design requirements through Tailwind, Headless UI, and Daisy UI, and deployed using Azure.</li>
-                    <li>Designed, implemented, and documented a relational database schema utilizing PostgreSQL, including
-                entity relationships and attribute definitions to facilitate future maintenance, and understanding for other team members.</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="diff-resizer"></div>
-            </div>
+            </ul>
           </div>
           <hr />
         </li>

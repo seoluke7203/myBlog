@@ -53,7 +53,7 @@ export default function Card({ title='title', job='', startDate = '', endDate = 
             </div>
           </div>
           <div className="card-foote">
-            <div className='divider'>Stack</div>
+            <div className='divider'></div>
             <div className="flex flex-wrap justify-start ml-3 gap-2">
               { tags.map((tag, index) => (
                 <div key={ index } className="badge badge-outline">

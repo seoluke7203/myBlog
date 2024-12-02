@@ -14,7 +14,7 @@ const AboutMe = () => {
       <div className="pt-10 pb-20 w-4/5">
         <h1 className="text-3xl font-bold text-primary mb-10">About Me</h1>
         <div className="inline-flex w-full flex-nowrap overflow-hidden">
-          <ul className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8 m-5">
+          <ul className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8 m-4">
             <li className='carousel-item'>
               <Card
                 title="Artistry"

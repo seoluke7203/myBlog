@@ -118,7 +118,7 @@ export default function ProgressSlider() {
       </div>
       <div className='mt-10'>
         <Link href="/wikiPage">
-          <button className="btn bg-primary text-secondary-content px-10 glass">Move to Wikipage</button>
+          <button className="btn bg-primary text-white px-10 rounded-xl">Move to Wikipage</button>
         </Link>
       </div>
     </div>
