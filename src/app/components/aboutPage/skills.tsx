@@ -19,7 +19,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
           <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
             <div className="card-body">
               <div className="card-title flex justify-between">
-                <h2 className="text-3xl">React, Next.js</h2>
+                <h2 className="text-3xl">React & Next.js</h2>
               </div>
               <p className="font-bold text-xl">
                 { (isEnglish) ?
@@ -38,7 +38,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
           <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
             <div className="card-body">
               <div className="card-title flex justify-between">
-                <h2 className="text-3xl">HTML, CSS</h2>
+                <h2 className="text-3xl">HTML & CSS</h2>
               </div>
               <p className="font-bold text-xl">
                 { (isEnglish) ?
@@ -75,7 +75,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
 
 
           </div>
-
+          { /* Card 4 */ }
           <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
             <div className="card-body">
               <div className="card-title flex justify-between">
@@ -95,7 +95,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
             </div>
           </div>
 
-
+          { /* Card 5 */ }
         </div>
         <div className="mt-8 flex gap-4">
           <div className="card lg:card-side bg-base-100 shadow-xl w-1/2">
@@ -116,6 +116,8 @@ export default function Skills({ isEnglish }: SkillsProps) {
               </p>
             </div>
           </div>
+
+          { /* Card 6 */ }
           <div className="card lg:card-side bg-base-100 shadow-xl w-1/2">
             <div className="card-body">
               <div className="card-title flex justify-between">
@@ -137,62 +139,122 @@ export default function Skills({ isEnglish }: SkillsProps) {
         </div>
 
 
-
-        <div className="text-2xl my-4 font-extrabold">
-          <div className="divider my-8">Backend Development</div>
+        { /* Backend */ }
+        <div className="text-2xl my-4 ">
+          <div className="divider my-8 font-extrabold">Backend Development</div>
           <div className="flex gap-x-4">
+            { /* Card 1 */ }
             <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
               <div className="card-body">
                 <div className="card-title flex justify-between">
-                  <h2 className="text-3xl">React, Next.js</h2>
+                  <h2 className="text-3xl">Java, Spring</h2>
                 </div>
-                <p className="font-bold text-xl">Advanced Understanding</p>
+                <p className="font-bold text-xl">
+                  { (isEnglish) ?
+                    'Advanced Understanding':
+                    '심화 이해'
+                  }</p>
                 <p className="text-base">
-              Proficient in using React Hooks and state management libraries (Redux, Context API). Experienced in implementing server-side rendering (SSR) and static site generation (SSG) with Next.js to optimize SEO and data fetching performance.
+                  { (isEnglish) ?
+                    'Familiar with the MVC pattern and the relationship between Servlets and the application flow. Experienced in building RESTful APIs using Spring Boot, with a solid understanding of Dependency Injection (DI) and Aspect-Oriented Programming (AOP). Proficient in implementing authentication and authorization using Spring Security.':
+                    'MVC 패턴과 Servlet의 관계 및 작동 흐름을 이해하며, Spring Boot를 활용한 RESTful API 개발 경험이 있습니다. 의존성 주입(DI)과 AOP의 개념 및 활용 사례를 이해하고 있으며, Spring Security를 통한 인증 및 권한 관리 구현 경험이 있습니다.'
+                  }
                 </p>
               </div>
             </div>
+            { /* Card 2 */ }
             <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
               <div className="card-body">
                 <div className="card-title flex justify-between">
-                  <h2 className="text-3xl">HTML, CSS</h2>
+                  <h2 className="text-3xl">NestJS</h2>
                 </div>
-                <p className="font-bold text-xl">Advanced Understanding</p>
+                <p className="font-bold text-xl">
+                  { (isEnglish) ?
+                    'Intermediate Understanding':
+                    '중급 이해'
+                  }</p>
                 <p className="text-base">
-              Proficient in using React Hooks and state management libraries (Redux, Context API). Experienced in implementing server-side rendering (SSR) and static site generation (SSG) with Next.js to optimize SEO and data fetching performance.
+                  { (isEnglish) ?
+                    'Experienced in building modular applications using NestJS with a solid grasp of Dependency Injection (DI). Skilled in database management using Drizzle ORM and TypeORM, with experience in implementing authentication and authorization.':
+                    'TypeScript 기반의 NestJS를 활용하여 모듈화된 구조와 DI(Dependency Injection)를 이해하고 있습니다. Drizzle ORM 및 Postman 을 사용한 데이터베이스 작업 경험이 있으며, 인증 및 권한 관리를 구현한 경험이 있습니다.'
+                  }
+                </p>
+              </div>
+            </div>
+
+            { /* Card 3 */ }
+            <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
+              <div className="card-body">
+                <div className="card-title flex justify-between">
+                  <h2 className="text-3xl">Python</h2>
+                </div>
+                <p className="font-bold text-xl">
+                  { (isEnglish) ?
+                    'Intermediate Understanding':
+                    '중급 이해'
+                  }</p>
+                <p className="text-base">
+                  { (isEnglish) ?
+                    'Experienced in data processing and developing simple scripts. Built web applications using Django and Flask. Familiar with data analysis and visualization tools such as Pandas, NumPy, and Matplotlib.':
+                    'Python을 활용한 데이터 처리와 간단한 스크립트 개발 경험이 있습니다. Django로 웹 애플리케이션 개발을 진행한 경험이 있으며, 데이터 분석과 시각화를 위해 Pandas, NumPy, Matplotlib 등을 사용해 본 적이 있습니다.'
+                  }
                 </p>
               </div>
             </div>
           </div>
-          <div className="text-2xl my-8 font-extrabold">
-            <div className="divider">Mobile Development</div>
+
+          { /* Mobile */ }
+          <div className="text-2xl my-8 ">
+            <div className="divider font-extrabold">Mobile Development</div>
             <div className="flex gap-x-4">
+              { /* Card 1 */ }
               <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
                 <div className="card-body">
                   <div className="card-title flex justify-between">
-                    <h2 className="text-3xl">React, Next.js</h2>
+                    <h2 className="text-3xl">Kotlin</h2>
                   </div>
-                  <p className="font-bold text-xl">Advanced Understanding</p>
+                  <p className="font-bold text-xl">
+                    { (isEnglish) ?
+                      'Advanced Understanding':
+                      '심화 이해'
+                    }</p>
                   <p className="text-base">
-              Proficient in using React Hooks and state management libraries (Redux, Context API). Experienced in implementing server-side rendering (SSR) and static site generation (SSG) with Next.js to optimize SEO and data fetching performance.
+                    { (isEnglish) ?
+                      'Knowledgeable in Kotlin syntax and its interoperability with Java. Hands-on experience with Android application development and basic asynchronous operations using Kotlin Coroutines.':
+                      'MVC 패턴과 Servlet의 관계 및 작동 흐름을 이해하며, Spring Boot를 활용한 RESTful API 개발 경험이 있습니다. 의존성 주입(DI)과 AOP의 개념 및 활용 사례를 이해하고 있으며, Spring Security를 통한 인증 및 권한 관리 구현 경험이 있습니다.'
+                    }
                   </p>
                 </div>
               </div>
+              { /* Card 2 */ }
               <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
                 <div className="card-body">
                   <div className="card-title flex justify-between">
-                    <h2 className="text-3xl">HTML, CSS</h2>
+                    <h2 className="text-3xl">DaisyUI & TailwindCSS</h2>
                   </div>
-                  <p className="font-bold text-xl">Advanced Understanding</p>
+                  <p className="font-bold text-xl">
+                    { (isEnglish) ?
+                      'Advanced Understanding':
+                      '심화 이해'
+                    }</p>
                   <p className="text-base">
-              Proficient in using React Hooks and state management libraries (Redux, Context API). Experienced in implementing server-side rendering (SSR) and static site generation (SSG) with Next.js to optimize SEO and data fetching performance.
+                    { (isEnglish) ?
+                      'Proficient in creating visually appealing and responsive UI components using TailwindCSS. Experienced in extending Tailwind\'s functionality with DaisyUI for pre-designed components, enabling faster and more efficient development. Familiar with customizing themes and maintaining design consistency across projects.':
+                      'TailwindCSS를 사용하여 반응형 및 세련된 UI 컴포넌트를 효율적으로 제작할 수 있습니다. DaisyUI를 활용해 미리 설계된 컴포넌트를 확장하여 빠르고 효율적인 개발 경험이 있으며, 테마 커스터마이징 및 프로젝트 전반의 디자인 일관성을 유지하는 데 능숙합니다.'
+                    }
                   </p>
                 </div>
+
               </div>
+
             </div>
           </div>
-          <div className="text-2xl my-8 font-extrabold">
-            <div className="divider">Database Management</div>
+
+
+
+
+          <div className="text-2xl my-8">
+            <div className="divider font-extrabold">Database Management</div>
             <div className="flex gap-x-4">
               <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
                 <div className="card-body">
@@ -219,8 +281,8 @@ export default function Skills({ isEnglish }: SkillsProps) {
             </div>
           </div>
 
-          <div className="text-2xl my-8 font-extrabold">
-            <div className="divider">DevOps</div>
+          <div className="text-2xl my-8">
+            <div className="divider font-extrabold">DevOps</div>
             <div className="flex gap-x-4">
               <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
                 <div className="card-body">

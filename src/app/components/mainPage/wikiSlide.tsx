@@ -11,7 +11,7 @@ export default function wikiSlide() {
   return (
     <div className="flex justify-center bg-base-200">
       <div className="pt-10 pb-20 w-4/5">
-        <h1 className="text-3xl font-bold text-primary pb-10">Wikipage</h1>
+        <h1 className="text-3xl font-bold text-accent pb-10">Wikipage</h1>
         <ProgressSlider />
       </div>
     </div>

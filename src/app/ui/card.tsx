@@ -16,11 +16,11 @@ export default function Card({ title='title', job='', startDate = '', endDate = 
   return(
     <div className="indicator">
       { current && (
-        <span className="indicator-item badge badge-error indicator-top indicator-start text-white p-4 mt-8 ml-16">
+        <span className="indicator-item badge badge-error indicator-top indicator-start text-base-100 p-4 mt-8 ml-16 rounded-none">
             Current
         </span>
       ) }
-      <div className="cursor-pointer card bg-primary w-80 h-[600px] shadow-xl glass">
+      <div className="cursor-pointer card bg-primary w-80 h-[600px] shadow-2xl text-accent mb-32 rounded-none p-1">
         <Link href="/about">
           <div className="flex justify-center mt-5">
             <figure className="w-[110px] h-[110px] mt-10 object-contain">
@@ -54,9 +54,9 @@ export default function Card({ title='title', job='', startDate = '', endDate = 
           </div>
           <div className="card-foote">
             <div className='divider'></div>
-            <div className="flex flex-wrap justify-start ml-3 gap-2">
+            <div className="flex flex-wrap justify-center ml-3 gap-2">
               { tags.map((tag, index) => (
-                <div key={ index } className="badge badge-outline">
+                <div key={ index } className="badge badge-outline rounded-none p-3">
                   { tag }
                 </div>
               )) }

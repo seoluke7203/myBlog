@@ -1,6 +1,8 @@
 /* eslint-disable max-len */
 import Poster from '@/app/ui/poster'
 import wikiImage from '@/app/assets/Logo/wikiImage.jpg'
+import handleScrollToTop from '@/app/util/mouseScrollToTop'
+
 
 const description_detail = {
 
@@ -26,35 +28,45 @@ const description_detail = {
 
 export default function Projects() {
   return (
-    <div className='flex justify-center'>
-      <div className="pt-10 pb-20 w-4/5">
-        <h1 className="text-3xl font-bold text-primary pb-10">Projects</h1>
-        <div className='flex flex-col gap-10'>
-          <Poster
-            id={ 1 }
-            title={ 'Galaxy Ticketing Web Application' }
-            summary={ 'A fullstack web application that allows users to purchase tickets for events and concerts.' }
-            description={ description_detail.Galaxy_eng }
-            descriptionKr= { description_detail.Galaxy_kor }
-            techStack={ [ 'React', 'TailWindCSS', 'Spring', 'MySQL', 'npm', 'Vite' ] }
-            date={ 'Oct.2024 - Dec.2024' }
-            image={ wikiImage }
-            link = { '' }
-          />
-          <div id="Blog">
+    <div className='flex flex-col'>
+      <div className='flex justify-center'>
+        <div className="pt-10 pb-20 w-4/5">
+          <h1 className="text-3xl font-bold text-accent pb-10">Projects</h1>
+          <div className='flex flex-col gap-10'>
             <Poster
-              id={ 2 }
-              title={ 'Blog' }
+              id={ 1 }
+              title={ 'Galaxy Ticketing Web Application' }
               summary={ 'A fullstack web application that allows users to purchase tickets for events and concerts.' }
-              description={ description_detail.Blog_eng }
-              descriptionKr= { description_detail.Blog_kor }
-              techStack={ [ 'Next.js', 'pnpm', 'TailwindCSS', 'DaisyUI', 'Vercel' ] }
+              description={ description_detail.Galaxy_eng }
+              descriptionKr= { description_detail.Galaxy_kor }
+              techStack={ [ 'React', 'TailWindCSS', 'Spring', 'MySQL', 'npm', 'Vite' ] }
               date={ 'Oct.2024 - Dec.2024' }
               image={ wikiImage }
               link = { '' }
             />
+            <div id="Blog">
+              <Poster
+                id={ 2 }
+                title={ 'Blog' }
+                summary={ 'A fullstack web application that allows users to purchase tickets for events and concerts.' }
+                description={ description_detail.Blog_eng }
+                descriptionKr= { description_detail.Blog_kor }
+                techStack={ [ 'Next.js', 'pnpm', 'TailwindCSS', 'DaisyUI', 'Vercel' ] }
+                date={ 'Nov.2024 - Dec.2024' }
+                image={ wikiImage }
+                link = { '' }
+              />
+            </div>
           </div>
         </div>
+
+      </div>
+      <div className='text-center p-10'>
+        <button
+          onClick={ handleScrollToTop }
+          className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg animate-bounce"
+        > Back to Top
+        </button>
       </div>
     </div>
   )

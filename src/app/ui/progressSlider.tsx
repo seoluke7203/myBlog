@@ -105,7 +105,7 @@ export default function ProgressSlider() {
             onClick={ () => { setActive(index); setProgress(0) } }
           >
             <div className={ `text-center flex flex-col items-center ${active === index ? '' : 'opacity-50 group-hover:opacity-100 group-focus:opacity-100 transition-opacity'}` }>
-              <div className="flex items-center justify-center relative w-9 h-9 rounded-full bg-primary mb-2">
+              <div className="flex items-center justify-center relative w-9 h-9 rounded-full bg-accent mb-2">
                 { item.buttonIcon }
               </div>
               <div className="block text-sm font-medium text-secondary-content mb-2">{ item.desc }</div>
@@ -118,7 +118,7 @@ export default function ProgressSlider() {
       </div>
       <div className='mt-10'>
         <Link href="/wikiPage">
-          <button className="btn bg-primary text-white px-10 rounded-xl">Move to Wikipage</button>
+          <button className="btn bg-secondary text-white px-10 rounded-xl">Move to Wikipage</button>
         </Link>
       </div>
     </div>

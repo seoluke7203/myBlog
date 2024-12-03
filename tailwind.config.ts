@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        interop: 'var(--font-interop)',
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
@@ -16,7 +19,7 @@ export default {
       animation: {
         'infinite-scroll': 'infinite-scroll 45s linear infinite',
         'appear': 'appear 0.2s ease-in-out',
-        'typing': 'typing 2s steps(15) alternate, blink 2s infinite'
+        'typing': 'typing 2s steps(10) alternate, blink 2s infinite'
       },
       keyframes: {
         'infinite-scroll': {
@@ -30,7 +33,7 @@ export default {
         'typing': {
           '0%': { width: '0%',
             visibility: 'hidden' },
-          '100%': { width: '100%' },
+          '100%': { width: '60%' },
         },
         'blink': {
           '50%': {
@@ -44,8 +47,17 @@ export default {
     }
   },
   daisyui: {
-    themes: [ 'nord' ],
+    themes: [
+      {
+        mytheme: {
+          'primary': '#BDEBF9',
+          'secondary': '#48B4D8',
+          'accent': '#05547D',
+          'base-100': '#ffffff',
+          'base-200': '#E4E8EF'
+        }
+      }
+    ]
   },
-
   plugins: [ daisyui ],
 } satisfies Config

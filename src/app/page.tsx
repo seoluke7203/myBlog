@@ -4,7 +4,6 @@ import Hero from '@/app/components/mainPage/hero'
 import AboutMe from '@/app/components/mainPage/aboutMe'
 import WikiSlide from '@/app/components/mainPage/wikiSlide'
 import Projects from '@/app/components/mainPage/projects'
-import handleScrollToTop from '@/app/util/mouseScrollToTop'
 import IconList from '@/app/components/mainPage/iconList'
 import Footer from '@/app/components/common/footer'
 
@@ -12,7 +11,7 @@ import Footer from '@/app/components/common/footer'
 export default function Home() {
 
   return (
-    <div>
+    <div className='bg-primary'>
       <div id="top" className='sticky top-0 z-50'>
         <Header />
       </div>
@@ -23,23 +22,18 @@ export default function Home() {
           </div>
         </aside>
         <Hero />
-        <div id ="aboutMe">
+        <div id ="aboutMe" className='bg-base-100'>
           <AboutMe/>
         </div>
-        <WikiSlide />
-        <div id ="projects">
+        <div id = "wikiPage" className='bg-base-200'>
+          <WikiSlide />
+        </div>
+        <div id ="projects" className='bg-base-100'>
           <Projects />
         </div>
-        <div className='text-center p-10'>
-          <button
-            onClick={ handleScrollToTop }
-            className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg animate-bounce"
-          > Back to Top
-          </button>
-        </div>
+
       </div>
       <Footer />
-
     </div>
   )
 }

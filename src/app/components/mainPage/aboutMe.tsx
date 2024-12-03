@@ -7,12 +7,13 @@ import CJSFLogo from '@/app/assets/Logo/CJSFLogo.png'
 import SFULogo from '@/app/assets/Logo/SFULogo.png'
 import VisionCodingLogo from '@/app/assets/Logo/visionCoding.png'
 import Tacademy from '@/app/assets/Logo/Tacademy.jpg'
+import { IoIosArrowUp } from 'react-icons/io'
 
 const AboutMe = () => {
   return (
     <div className='flex justify-center'>
       <div className="pt-10 pb-20 w-4/5">
-        <h1 className="text-3xl font-bold text-primary mb-10">About Me</h1>
+        <h1 className="text-3xl font-bold text-accent mb-10">About Me</h1>
         <div className="inline-flex w-full flex-nowrap overflow-hidden">
           <ul className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8 m-4">
             <li className='carousel-item'>
@@ -154,14 +155,13 @@ const AboutMe = () => {
             </li>
           </ul>
         </div>
-        <div className="pt-6 text-xl flex justify-center">
-          <div className='bg-white text-primary text-center rounded-full inline-block px-4 py-2'>
-            <span className='font-bold text-2xl '>Click</span> on the cards for more details
+        <div className="text-xl flex flex-col justify-center items-center -mt-32">
+          <IoIosArrowUp className="text-6xl text-primary" />
+          <div className="text-accent text-center rounded-full inline-block px-4 py-2">
+            <span className="font-bold text-2xl">Click</span> on the cards for more details
           </div>
         </div>
-
       </div>
-
     </div>
   )
 }
