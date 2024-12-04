@@ -17,18 +17,20 @@ export default function Page() {
   }
 
   return (
-    <div>
+    <div className = 'bg-primary'>
       <div id="top" className='sticky top-0 z-50'>
         <Header />
       </div>
       <Hero />
-      <label className="flex cursor-pointer gap-2 place-items-center place-content-center my-8">
-        <span className="text-3xl text-white">English</span>
-        <input type="checkbox" value="synthwave" className="toggle" checked={ !isEnglish } onChange={ handleToggle }/>
-        <span className="text-3xl text-white">Korean</span>
-      </label>
+      <div className="flex justify-center sticky top-3/4 z-50">
+        <label className="inline-flex cursor-pointer gap-2 items-center p-4 rounded-full bg-primary border-2 border-base-300 my-5">
+          <span className="text-lg text-accent font-bold">English</span>
+          <input type="checkbox" value="synthwave" className="toggle" checked={ !isEnglish } onChange={ handleToggle } />
+          <span className="text-lg text-accent font-bold">Korean</span>
+        </label>
+      </div>
 
-      <div className='m-2 p-2'>
+      <div className='-mt-4 p-2 mb-24'>
         <div tabIndex= { 0 } className="collapse collapse-arrow bg-base-200 my-2">
           <input type="checkbox"></input>
           <div className="collapse-title text-3xl font-medium text-black text-center">Skills</div>

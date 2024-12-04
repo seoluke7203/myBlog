@@ -2,8 +2,7 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
-import background3 from '@/app/assets/graphics/background3.jpg'
+import background from '@/app/assets/graphics/background5.jpg'
 import { MdOutlineArrowDropDownCircle } from 'react-icons/md'
 import handleScrollToSection from '@/app/util/mouseScrollSection'
 import NextLogo from '@/app/assets/Logo/NextJSLogo.png'
@@ -14,7 +13,7 @@ const Hero = () => {
   return (
     <div className="flex justify-center relative">
       <Image
-        src={ background3 }
+        src={ background }
         alt="Background"
         layout="fill"
         objectFit="cover"
@@ -50,7 +49,7 @@ const Hero = () => {
                in IT.
             </p>
             <div className="place-items-center mt-14">
-              <MdOutlineArrowDropDownCircle className="animate-bounce text-5xl text-primary" />
+              <MdOutlineArrowDropDownCircle className="animate-bounce text-5xl text-accent" />
             </div>
           </div>
         </div>

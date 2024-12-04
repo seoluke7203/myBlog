@@ -106,7 +106,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
               <p className="font-bold text-xl">
                 { (isEnglish) ?
                   'Advanced Understanding':
-                  '심화 이해'
+                  '중급 이해'
                 }</p>
               <p className="text-base">
                 { (isEnglish) ?
@@ -144,7 +144,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
           <div className="divider my-8 font-extrabold">Backend Development</div>
           <div className="flex gap-x-4">
             { /* Card 1 */ }
-            <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
+            <div className="card lg:card-side bg-base-100 shadow-xl w-1/3 my-6">
               <div className="card-body">
                 <div className="card-title flex justify-between">
                   <h2 className="text-3xl">Java, Spring</h2>
@@ -163,7 +163,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
               </div>
             </div>
             { /* Card 2 */ }
-            <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
+            <div className="card lg:card-side bg-base-100 shadow-xl w-1/3 my-6">
               <div className="card-body">
                 <div className="card-title flex justify-between">
                   <h2 className="text-3xl">NestJS</h2>
@@ -183,7 +183,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
             </div>
 
             { /* Card 3 */ }
-            <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
+            <div className="card lg:card-side bg-base-100 shadow-xl w-1/3 my-6">
               <div className="card-body">
                 <div className="card-title flex justify-between">
                   <h2 className="text-3xl">Python</h2>
@@ -208,7 +208,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
             <div className="divider font-extrabold">Mobile Development</div>
             <div className="flex gap-x-4">
               { /* Card 1 */ }
-              <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
+              <div className="card lg:card-side bg-base-100 shadow-xl w-full my-6">
                 <div className="card-body">
                   <div className="card-title flex justify-between">
                     <h2 className="text-3xl">Kotlin</h2>
@@ -220,89 +220,77 @@ export default function Skills({ isEnglish }: SkillsProps) {
                     }</p>
                   <p className="text-base">
                     { (isEnglish) ?
-                      'Knowledgeable in Kotlin syntax and its interoperability with Java. Hands-on experience with Android application development and basic asynchronous operations using Kotlin Coroutines.':
-                      'MVC 패턴과 Servlet의 관계 및 작동 흐름을 이해하며, Spring Boot를 활용한 RESTful API 개발 경험이 있습니다. 의존성 주입(DI)과 AOP의 개념 및 활용 사례를 이해하고 있으며, Spring Security를 통한 인증 및 권한 관리 구현 경험이 있습니다.'
+                      'Knowledgeable in Kotlin syntax and its interoperability with Java. Hands-on experience with Android application development using Android Studio and basic asynchronous operations using Kotlin Coroutines.':
+                      'JVM 언어로서의 Kotlin 문법과 Java와의 상호운용성을 이해하고 있으며, Android 애플리케이션 개발 시 활용 안드로이드 스튜디오를 사용한 경험이 있습니다. 간단한 Kotlin 코루틴을 사용한 비동기 작업 처리 경험이 있습니다.'
                     }
                   </p>
                 </div>
               </div>
-              { /* Card 2 */ }
-              <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
+              <div className="card lg:card-side bg-base-100 shadow-xl w-full my-6">
                 <div className="card-body">
                   <div className="card-title flex justify-between">
-                    <h2 className="text-3xl">DaisyUI & TailwindCSS</h2>
+                    <h2 className="text-3xl">React Native</h2>
                   </div>
                   <p className="font-bold text-xl">
                     { (isEnglish) ?
-                      'Advanced Understanding':
-                      '심화 이해'
+                      'Intermediate Understanding':
+                      '중급 이해'
                     }</p>
                   <p className="text-base">
                     { (isEnglish) ?
-                      'Proficient in creating visually appealing and responsive UI components using TailwindCSS. Experienced in extending Tailwind\'s functionality with DaisyUI for pre-designed components, enabling faster and more efficient development. Familiar with customizing themes and maintaining design consistency across projects.':
-                      'TailwindCSS를 사용하여 반응형 및 세련된 UI 컴포넌트를 효율적으로 제작할 수 있습니다. DaisyUI를 활용해 미리 설계된 컴포넌트를 확장하여 빠르고 효율적인 개발 경험이 있으며, 테마 커스터마이징 및 프로젝트 전반의 디자인 일관성을 유지하는 데 능숙합니다.'
+                      'Experienced in building cross-platform mobile applications using React Native. Familiar with core components, navigation libraries (e.g., React Navigation), and state management tools like Redux. Skilled in integrating RESTful APIs and optimizing app performance for both iOS and Android platforms.':
+                      'React Native를 사용하여 크로스 플랫폼 모바일 애플리케이션을 개발한 경험이 있습니다. 핵심 컴포넌트, 네비게이션 라이브러리(예: React Navigation), 상태 관리 도구(Redux)를 활용할 수 있습니다. RESTful API 통합 및 iOS와 Android 플랫폼 모두에서 성능 최적화 경험이 있습니다.'
                     }
                   </p>
                 </div>
-
               </div>
-
             </div>
           </div>
 
-
-
-
+          { /* Database */ }
           <div className="text-2xl my-8">
             <div className="divider font-extrabold">Database Management</div>
             <div className="flex gap-x-4">
-              <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
+              <div className="card lg:card-side bg-base-100 shadow-xl w-1/1 my-6">
                 <div className="card-body">
                   <div className="card-title flex justify-between">
-                    <h2 className="text-3xl">React, Next.js</h2>
+                    <h2 className="text-3xl">MySQL & PostgreSQL & MongoDB</h2>
                   </div>
-                  <p className="font-bold text-xl">Advanced Understanding</p>
+                  <p className="font-bold text-xl">
+                    { (isEnglish) ?
+                      'Intermediate Understanding':
+                      '중급 이해'
+                    }</p>
                   <p className="text-base">
-              Proficient in using React Hooks and state management libraries (Redux, Context API). Experienced in implementing server-side rendering (SSR) and static site generation (SSG) with Next.js to optimize SEO and data fetching performance.
-                  </p>
-                </div>
-              </div>
-              <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
-                <div className="card-body">
-                  <div className="card-title flex justify-between">
-                    <h2 className="text-3xl">HTML, CSS</h2>
-                  </div>
-                  <p className="font-bold text-xl">Advanced Understanding</p>
-                  <p className="text-base">
-              Proficient in using React Hooks and state management libraries (Redux, Context API). Experienced in implementing server-side rendering (SSR) and static site generation (SSG) with Next.js to optimize SEO and data fetching performance.
+                    { (isEnglish) ?
+                      'Proficient in designing and optimizing relational databases using MySQL and PostgreSQL. Experienced in NoSQL database modeling and querying with MongoDB. Familiar with indexing and transactions for performance optimization.':
+                      'MySQL과 PostgreSQL을 활용한 관계형 데이터베이스 설계 및 최적화 경험이 있으며, MongoDB를 사용한 NoSQL 데이터 모델링 및 쿼리 작성 경험이 있습니다. 데이터베이스 인덱싱과 트랜잭션을 활용하여 성능 최적화를 구현한 경험이 있습니다.'
+                    }
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
+          { /* DevOps */ }
           <div className="text-2xl my-8">
             <div className="divider font-extrabold">DevOps</div>
             <div className="flex gap-x-4">
-              <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
+              <div className="card lg:card-side bg-base-100 shadow-xl w-full my-6">
                 <div className="card-body">
                   <div className="card-title flex justify-between">
-                    <h2 className="text-3xl">React, Next.js</h2>
+                    <h2 className="text-3xl">Docker</h2>
                   </div>
-                  <p className="font-bold text-xl">Advanced Understanding</p>
+                  <p className="font-bold text-xl">
+                    { (isEnglish) ?
+                      'Basic Understanding':
+                      '기본 이해'
+                    }</p>
                   <p className="text-base">
-              Proficient in using React Hooks and state management libraries (Redux, Context API). Experienced in implementing server-side rendering (SSR) and static site generation (SSG) with Next.js to optimize SEO and data fetching performance.
-                  </p>
-                </div>
-              </div>
-              <div className="card lg:card-side bg-base-100 shadow-xl w-1/4">
-                <div className="card-body">
-                  <div className="card-title flex justify-between">
-                    <h2 className="text-3xl">HTML, CSS</h2>
-                  </div>
-                  <p className="font-bold text-xl">Advanced Understanding</p>
-                  <p className="text-base">
-              Proficient in using React Hooks and state management libraries (Redux, Context API). Experienced in implementing server-side rendering (SSR) and static site generation (SSG) with Next.js to optimize SEO and data fetching performance.
+                    { (isEnglish) ?
+                      'Able to set up containerized application deployment environments. Experienced in writing Dockerfiles and using docker-compose to create container images and manage multi-container environments.':
+                      '컨테이너 기반 애플리케이션 배포 환경을 설정할 수 있습니다. Dockerfile과 docker-compose를 활용하여 애플리케이션의 컨테이너 이미지를 생성하고, 컨테이너 간 네트워크 설정 및 실행 환경을 구성한 경험이 있습니다.'
+                    }
                   </p>
                 </div>
               </div>
