@@ -5,7 +5,11 @@ import SFULogo from '@/app/assets/Logo/SFULogo.png'
 import VisionCodingLogo from '@/app/assets/Logo/visionCoding.png'
 import Tacademy from '@/app/assets/Logo/Tacademy.jpg'
 
-export default function Timeline() {
+interface TimelineProps {
+  isEnglish: boolean
+}
+
+export default function Timeline({ isEnglish }: TimelineProps) {
   const ArtistryStack = [ 'Next.js', 'TypeScript', 'TailwindCSS', 'DaisyUi', 'Nest.js', 'DrizzleORM', 'PostgreSQL', 'Jira', 'Docker' ]
   const TacademyStack = [ 'React', 'Spring', 'Docker', 'AWS', 'MySQL', 'Next.js' ]
   const VisionStack = [ 'Python', 'Machine Learning', 'Artificial Intelligence' ]
@@ -29,7 +33,7 @@ export default function Timeline() {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-start mb-10 md:text-end bg-secondary rounded-2xl p-3">
+          <div className="timeline-start mb-10 md:text-end bg-base-100 rounded-2xl p-3">
             <time className="italic">2023 July - Present (1 year 4 months)</time>
             <div className="text-2xl font-black text-center mt-5">Full-stack Developer</div>
             <div className="text-xl font-black text-center my-3">Artistry</div>
@@ -43,7 +47,7 @@ export default function Timeline() {
               </figure>
               <div className='my-5'>
                 { ArtistryStack.map((stack, index) => (
-                  <div key={ index } className='badge odd:badge-warning event:badge-accent mr-4'>{ stack }</div>
+                  <div key={ index } className='badge odd:badge-accent even:badge-primary mr-4'>{ stack }</div>
                 )) }
               </div>
             </div>
@@ -72,7 +76,7 @@ export default function Timeline() {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-end mb-10 bg-secondary rounded-2xl p-3">
+          <div className="timeline-end mb-10 bg-base-100 rounded-2xl p-3">
             <time className="italic">2024 Aug - Present (4 months)</time>
             <div className="text-2xl font-black text-center mt-5">Full-stack Developer Learner</div>
             <div className="text-xl font-black text-center my-3">SK T Academy</div>
@@ -86,7 +90,7 @@ export default function Timeline() {
               </figure>
               <div className='my-5'>
                 { TacademyStack.map((stack, index) => (
-                  <div key={ index } className='badge odd:badge-warning  event:badge-accent mr-4'>{ stack }</div>
+                  <div key={ index } className='badge odd:badge-accent even:badge-primary mr-4'>{ stack }</div>
                 )) }
               </div>
             </div>
@@ -110,7 +114,7 @@ export default function Timeline() {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-start mb-10 md:text-end bg-secondary rounded-2xl p-3">
+          <div className="timeline-start mb-10 md:text-end bg-base-100 rounded-2xl p-3">
             <time className="italic">2024 Feb - June (4 months) </time>
             <div className="text-2xl font-black text-center mt-5">Coding Instructor</div>
             <div className="text-xl font-black text-center my-3">Vision Coding Academy</div>
@@ -124,7 +128,7 @@ export default function Timeline() {
               </figure>
               <div className='my-5'>
                 { VisionStack.map((stack, index) => (
-                  <div key={ index } className='badge odd:badge-warning  event:badge-accent mr-4'>{ stack }</div>
+                  <div key={ index } className='badge odd:badge-accent even:badge-primary mr-4'>{ stack }</div>
                 )) }
               </div>
             </div>
@@ -151,7 +155,7 @@ export default function Timeline() {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-end mb-10 bg-secondary rounded-2xl p-3">
+          <div className="timeline-end mb-10 bg-base-100 rounded-2xl p-3">
             <time className="italic">2023 Sep - Dec (4 months)</time>
             <div className="text-2xl font-black text-center mt-5">Web Developer</div>
             <div className="text-xl font-black text-center my-3">CJSF 90.1 FM Radio</div>
@@ -165,7 +169,7 @@ export default function Timeline() {
               </figure>
               <div className='my-5'>
                 { CJSFWStack.map((stack, index) => (
-                  <div key={ index } className='badge odd:badge-warning  event:badge-accent mr-4'>{ stack }</div>
+                  <div key={ index } className='badge odd:badge-accent even:badge-primary mr-4'>{ stack }</div>
                 )) }
               </div>
             </div>
@@ -192,7 +196,7 @@ export default function Timeline() {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-start mb-10 md:text-end bg-secondary rounded-2xl p-3">
+          <div className="timeline-start mb-10 md:text-end bg-base-100 rounded-2xl p-3">
             <time className="italic">2023 May - Aug (4 months)</time>
             <div className="text-2xl font-black text-center mt-5">Research Assistant</div>
             <div className="text-xl font-black text-center my-3">Simon Fraser University</div>
@@ -206,7 +210,7 @@ export default function Timeline() {
               </figure>
               <div className='my-5'>
                 { SFUStack.map((stack, index) => (
-                  <div key={ index } className='badge odd:badge-warning  event:badge-accent mr-4'>{ stack }</div>
+                  <div key={ index } className='badge odd:badge-accent even:badge-primary mr-4'>{ stack }</div>
                 )) }
               </div>
             </div>
@@ -235,7 +239,7 @@ export default function Timeline() {
                 clipRule="evenodd" />
             </svg>
           </div>
-          <div className="timeline-end mb-10 bg-secondary rounded-2xl p-3">
+          <div className="timeline-end mb-10 bg-base-100 rounded-2xl p-3">
             <time className="italic">2023 Sep - Dec (4 months)</time>
             <div className="text-2xl font-black text-center mt-5">Mobile Application Developer</div>
             <div className="text-xl font-black text-center my-3">CJSF 90.1 FM Radio</div>
@@ -249,7 +253,7 @@ export default function Timeline() {
               </figure>
               <div className='my-5'>
                 { CJSFMStack.map((stack, index) => (
-                  <div key={ index } className='badge odd:badge-warning event:badge-accent mr-4'>{ stack }</div>
+                  <div key={ index } className='badge odd:badge-accent even:badge-primary mr-4'>{ stack }</div>
                 )) }
               </div>
             </div>

@@ -52,7 +52,7 @@ export default function Card({ title='title', job='', startDate = '', endDate = 
               <p className="mt-2">Duration: { duration }</p>
             </div>
           </div>
-          <div className="card-foote">
+          <div className="card-footer">
             <div className='divider'></div>
             <div className="flex flex-wrap justify-center ml-3 gap-2">
               { tags.map((tag, index) => (

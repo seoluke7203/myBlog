@@ -91,7 +91,7 @@ export default function ProgressSlider() {
               beforeEnter={ () => heightFix() }
             >
               <div className='stack'>
-                <Image className="rounded-xl w-2/3 shadow-2xl shadow-black border-8 border-black" src={ item.img } alt={ item.desc } />
+                <Image className="rounded-xl shadow-2xl h-[320px] shadow-black border-8 border-black" src={ item.img } alt={ item.desc } />
               </div>
             </Transition>
           )) }

@@ -22,8 +22,8 @@ export default function Page() {
         <Header />
       </div>
       <Hero />
-      <div className="flex justify-center sticky top-3/4 z-50">
-        <label className="inline-flex cursor-pointer gap-2 items-center p-4 rounded-full bg-primary border-2 border-base-300 my-5">
+      <div className="flex justify-center sticky top-3/4 z-50 ">
+        <label className="inline-flex absolute cursor-pointer gap-2 items-center p-4 rounded-full border-2 border-base-300 mt-10 my-5 glass">
           <span className="text-lg text-accent font-bold">English</span>
           <input type="checkbox" value="synthwave" className="toggle" checked={ !isEnglish } onChange={ handleToggle } />
           <span className="text-lg text-accent font-bold">Korean</span>
@@ -42,21 +42,21 @@ export default function Page() {
           <input type="checkbox"></input>
           <div className="collapse-title text-3xl font-medium text-black text-center">Experience</div>
           <div className="collapse-content">
-            <Timeline />
+            <Timeline isEnglish={ isEnglish } />
           </div>
         </div>
         <div tabIndex= { 2 } className="collapse collapse-arrow bg-base-200 my-2">
           <input type="checkbox"></input>
           <div className="collapse-title text-3xl font-medium text-black text-center">Education</div>
           <div className="collapse-content">
-            <Education />
+            <Education isEnglish={ isEnglish } />
           </div>
         </div>
         <div tabIndex= { 3 } className="collapse collapse-arrow bg-base-200 my-2">
           <input type="checkbox"></input>
           <div className="collapse-title text-3xl font-medium text-black text-center">Other Activities</div>
           <div className="collapse-content">
-            <Education />
+            <Education isEnglish={ isEnglish } />
           </div>
         </div>
       </div>

@@ -25,12 +25,13 @@ export default function Home() {
         <div id ="aboutMe" className='bg-base-100'>
           <AboutMe/>
         </div>
-        <div id = "wikiPage" className='bg-base-200'>
-          <WikiSlide />
-        </div>
-        <div id ="projects" className='bg-base-100'>
+        <div id ="projects" className='bg-base-200'>
           <Projects />
         </div>
+        <div id = "wikiPage" className='bg-base-100'>
+          <WikiSlide />
+        </div>
+
 
       </div>
       <Footer />

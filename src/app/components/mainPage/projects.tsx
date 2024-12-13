@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import Poster from '@/app/ui/poster'
 import wikiImage from '@/app/assets/Logo/wikiImage.jpg'
-import handleScrollToTop from '@/app/util/mouseScrollToTop'
 
 
 const description_detail = {
@@ -61,13 +60,7 @@ export default function Projects() {
         </div>
 
       </div>
-      <div className='text-center p-10'>
-        <button
-          onClick={ handleScrollToTop }
-          className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg animate-bounce"
-        > Back to Top
-        </button>
-      </div>
+
     </div>
   )
 }

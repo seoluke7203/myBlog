@@ -18,7 +18,7 @@ interface Props {
 
 export default function Poster({ id, title, summary, description, descriptionKr, techStack, date, image, link }:Props) {
   return (
-    <div className="card lg:card-side bg-base-200 shadow-xl rounded-none">
+    <div className="card lg:card-side bg-base-100 shadow-xl rounded-none">
       <figure className='w-[500px]' >
         <Image
           src={ wikiImage }
