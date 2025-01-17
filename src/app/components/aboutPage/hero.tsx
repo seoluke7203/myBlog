@@ -8,11 +8,10 @@ export default function Hero() {
       <Image
         src={ background }
         alt="Background"
-        layout="fill"
-        objectFit="cover"
+        fill
         quality={ 100 }
         placeholder='blur'
-        className="z-0"
+        className="z-0 object-cover"
       />
       <div className="absolute inset-0 bg-primary bg-opacity-60 z-10"></div>
       <div className="relative z-20 hero-content text-neutral-content text-center">

@@ -233,7 +233,7 @@ export default function Skills({ isEnglish }: SkillsProps) {
                 description={ skill.description }
                 isEnglish={ isEnglish }
                 level={ skill.level }
-                className="w-1/1 my-6"
+                className="w-full my-6"
               />
             )) }
           </div>

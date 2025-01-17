@@ -15,10 +15,10 @@ const Hero = () => {
       <Image
         src={ background }
         alt="Background"
-        layout="fill"
-        objectFit="cover"
+        fill
+        priority
         quality={ 100 }
-        className="z-0"
+        className="z-0 object-cover"
       />
       <div className="hero pt-48 pb-24 relative z-20">
         <div className="hero-content flex-col lg:flex-row-reverse">

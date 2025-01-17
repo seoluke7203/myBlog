@@ -7,6 +7,7 @@ import Header from '@/app/components/common/header'
 import Education from '@/app/components/aboutPage/education'
 import Footer from '@/app/components/common/footer'
 import Skills from '@/app/components/aboutPage/skills'
+import Activity from '@/app/components/aboutPage/activity'
 
 export default function Page() {
   const [ isEnglish, setIsEnglish ] =useState(true)
@@ -56,7 +57,7 @@ export default function Page() {
           <input type="checkbox"></input>
           <div className="collapse-title text-3xl font-medium text-black text-center">Other Activities</div>
           <div className="collapse-content">
-            <Education isEnglish={ isEnglish } />
+            <Activity isEnglish={ isEnglish } />
           </div>
         </div>
       </div>

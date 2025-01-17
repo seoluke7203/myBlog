@@ -64,8 +64,8 @@ export default function Poster({ id, title, summary, description, descriptionKr,
             <button className="btn btn-accent font-bold text-base-100 rounded-xl">View More
             </button>
           </Link>
-          <Link href={ link }>
-            <button className="github-link">
+          <Link href={ link } aria-label='Read more about this project'>
+            <button aria-label='github_link'>
               <FaSquareGithub className="text-5xl text-accent" />
             </button>
           </Link>

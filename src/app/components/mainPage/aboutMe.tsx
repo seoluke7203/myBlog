@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-// Code Inspired from https://cruip.com/create-an-infinite-horizontal-scroll-animation-with-tailwind-css/
 
 import Card from '@/app/ui/card'
 import ArtistryLogo from '@/app/assets/Logo/ArtistryLogo.png'
