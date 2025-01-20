@@ -8,6 +8,8 @@ import Education from '@/app/components/aboutPage/education'
 import Footer from '@/app/components/common/footer'
 import Skills from '@/app/components/aboutPage/skills'
 import Activity from '@/app/components/aboutPage/activity'
+import experiences from '@/app/data/timelineData'
+
 
 export default function Page() {
   const [ isEnglish, setIsEnglish ] =useState(true)
@@ -42,8 +44,8 @@ export default function Page() {
         <div tabIndex= { 1 } className="collapse collapse-arrow bg-base-200">
           <input type="checkbox"></input>
           <div className="collapse-title text-3xl font-medium text-black text-center">Experience</div>
-          <div className="collapse-content">
-            <Timeline isEnglish={ isEnglish } />
+          <div className="collapse-content mx-10">
+            <Timeline experiences = { experiences } isEnglish={ isEnglish } />
           </div>
         </div>
         <div tabIndex= { 2 } className="collapse collapse-arrow bg-base-200 my-2">
