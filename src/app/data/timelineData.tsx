@@ -134,7 +134,7 @@ const experiences = [
     position: 'Research Assistant',
     company: 'Simon Fraser University',
     logo: SFULogo,
-    stack: [ 'Python', 'Machine Learning', 'Artificial Intelligence' ],
+    stack: [ 'Godot Engine', 'GDScript', 'Python' ],
     descriptionEn: (
       <ul className="list-disc list-inside text-start space-y-2">
         <li>Conducted research on the application of machine learning and artificial intelligence in the field of cybersecurity, focusing on the detection of malware and intrusion detection systems.</li>
