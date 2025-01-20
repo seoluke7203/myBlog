@@ -45,14 +45,14 @@ const experiences = [
         <h2 className="text-lg mb-2 font-semibold">Developed a platform for managing student attendance and shuttle services through the web application (OnePass)</h2>
         <ul className="list-disc list-inside text-start space-y-2">
           <li>Collaborated with two frontend developers and two backend developers on an outsourcing project to develop a web application with complex business logic tailored to client requirements</li>
-          <li>Implemented the frontend using React and Vite, fulfilling the client's design requirements with TailwindCSS and DaisyUI, and providing a user-friendly interface</li>
+          <li>Implemented the frontend using React and Vite, fulfilling the client&apos;s design requirements with TailwindCSS and DaisyUI, and providing a user-friendly interface</li>
           <li>Used AWS S3 to handle image uploads and management, and deployed the server reliably using AWS EC2 to maintain high availability</li>
           <li>Automated CI/CD workflows using GitHub Actions, running builds and tests automatically upon code merges, simplifying deployment and maximizing development and deployment efficiency</li>
           <li>Utilized Swagger, DBeaver, and Postman to test and document communication with the backend, efficiently managing the development process</li>
           <li>Applied React Hook Form and zod to implement robust data validation and verification during user registration and student enrollment, ensuring the secure handling of user data</li>
           <li>Conducted various client tests and considered edge cases to deliver a platform with high stability and reliability</li>
           <li>Designed and implemented reusable components to enhance development productivity and minimize maintenance costs in response to frequent changes in client requirements. Applied Atomic Design principles to systematically structure components and build scalable, well-organized code</li>
-          <li>Designed and implemented a custom calendar component instead of relying on existing React libraries to meet the project's complex business logic and custom functionality requirements. Delivered an optimized solution reflecting the client's detailed needs while considering scalability and performance</li>
+          <li>Designed and implemented a custom calendar component instead of relying on existing React libraries to meet the project&apos;s complex business logic and custom functionality requirements. Delivered an optimized solution reflecting the client&apos;s detailed needs while considering scalability and performance</li>
         </ul>
       </div>
     ),
@@ -106,8 +106,8 @@ const experiences = [
     stack: [ 'JavaScript', 'CSS', 'Docker', 'Drupal' ],
     descriptionEn: (
       <ul className="list-disc list-inside text-start space-y-2">
-        <li>Responsible for migrating the company's website from Drupal 7 to 8 by utilizing Docker, MySQL, and PHP, while ensuring data integrity, content migration, and updating contributed modules and themes.</li>
-        <li>Led the redesign of the company's funding website using Figma for wireframes, and Drupal and CSS for a more convenient and appealing design, achieving a 55% increase in funds compared to the previous year.</li>
+        <li>Responsible for migrating the company&apos;s website from Drupal 7 to 8 by utilizing Docker, MySQL, and PHP, while ensuring data integrity, content migration, and updating contributed modules and themes.</li>
+        <li>Led the redesign of the company&apos;s funding website using Figma for wireframes, and Drupal and CSS for a more convenient and appealing design, achieving a 55% increase in funds compared to the previous year.</li>
       </ul>
     ),
     descriptionKo: (
@@ -139,7 +139,7 @@ const experiences = [
       <ul className="list-disc list-inside text-start space-y-2">
         <li>Conducted research on the application of machine learning and artificial intelligence in the field of cybersecurity, focusing on the detection of malware and intrusion detection systems.</li>
         <li>Developed a Python-based machine learning model using Scikit-learn and TensorFlow to classify malware samples, achieving an accuracy rate of 95%.</li>
-        <li>Collaborated with a team of researchers to publish a research paper on the topic, contributing to the academic community's understanding of the subject.</li>
+        <li>Collaborated with a team of researchers to publish a research paper on the topic, contributing to the academic community&apos;s understanding of the subject.</li>
       </ul>
     ),
     descriptionKo: (
@@ -152,7 +152,7 @@ const experiences = [
             중국 텐진(TianJian, 天津) 대학교와 공동 연구를 진행함
           </li>
           <li>
-            프로그래밍 개념을 흥미롭게 학습할 수 있도록 설계된 Python 교육 게임 "Ancient Treasure Adventures"를 개발함
+            프로그래밍 개념을 흥미롭게 학습할 수 있도록 설계된 Python 교육 게임 Ancient Treasure Adventures를 개발함
           </li>
           <li>
             Dr. Imran 교수님의 지도 아래 4명의 연구 조수와 함께 Python 초보 학습자를 위한 효율적인 교육 방법을 탐구하는 연구 프로젝트를 진행함
@@ -178,8 +178,8 @@ const experiences = [
     stack: [ 'JavaScript', 'CSS', 'Docker', 'Drupal' ],
     descriptionEn: (
       <ul className="list-disc list-inside text-start space-y-2">
-        <li>Responsible for migrating the company's website from Drupal 7 to 8 by utilizing Docker, MySQL, and PHP, while ensuring data integrity, content migration, and updating contributed modules and themes.</li>
-        <li>Led the redesign of the company's funding website using Figma for wireframes, and Drupal and CSS for a more convenient and appealing design, achieving a 55% increase in funds compared to the previous year.</li>
+        <li>Developed the first launching radio streaming app using JavaScript and React Native for iOS and Android, implemented an automatic news updating algorithm that makes priorities of data fetched from the GitLab Web External API.</li>
+        <li>Built a strategic and optimized approach to access radio playlists, resulting in increased overall efficiency for retrieving playlists and managing personal preferences while reducing battery consumption by 30%.</li>
       </ul>
     ),
     descriptionKo: (
