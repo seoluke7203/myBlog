@@ -3,6 +3,10 @@ import { FaSquareGithub } from 'react-icons/fa6'
 import Link from 'next/link'
 import Image from 'next/image'
 import wikiImage from '@/app/assets/Logo/wikiImage.jpg'
+import SimpleSlider from '@/app/ui/projectCarousel'
+import galaxy1 from '@/app/assets/projectImages/galaxy1.png'
+import galaxy2 from '@/app/assets/projectImages/galaxy2.png'
+
 
 interface Props {
   title: string;
@@ -17,15 +21,15 @@ interface Props {
 }
 
 export default function Poster({ id, title, summary, description, descriptionKr, techStack, date, image, link }:Props) {
+  const images = {
+    galaxy1,
+    galaxy2,
+  }
+
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl rounded-none">
-      <figure className='w-[500px]' >
-        <Image
-          src={ wikiImage }
-          width={ 500 }
-          alt="Album"
-          className='object-fill w-full h-full'
-        />
+      <figure className='w-1/3 h-full mt-20' >
+        <SimpleSlider images={ images }/>
       </figure>
       <div className="card-body mt-4">
         <div className='flex justify-between items-start flex-col mb-2'>
